@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tieptuyen.Components.Core.Api.Configuration.Default</name>
+    </assembly>
+    <members>
+        <member name="T:Tieptuyen.Components.Core.Api.Configuration.Default.ConfigurationManager">
+            <summary>
+            A manager for handling configuration values in the system.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Configuration.Default.ConfigurationManager.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.Api.Configuration.Default.ConfigurationManager"/> class.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Configuration.Default.ConfigurationManager.GetAllValues">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Configuration.Default.ConfigurationManager.GetValue(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Configuration.Default.ConfigurationManager.GetValues(System.String[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Configuration.Default.ConfigurationManager.SetValue(System.String,System.Object,Tieptuyen.Components.Core.Api.Configuration.ValueType)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Configuration.Default.ConfigurationManager.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Configuration.Default.ConfigurationManager.TrySetMember(System.Dynamic.SetMemberBinder,System.Object)">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>

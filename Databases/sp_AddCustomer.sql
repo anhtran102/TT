@@ -1,0 +1,17 @@
+
+
+CREATE PROCEDURE [cmn].[AddCustomer]	
+	@CustomerName NVARCHAR(100),
+	@Address NVARCHAR(1000),
+	@Phone VARCHAR(15)	
+AS
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
+SET NOCOUNT ON
+
+BEGIN TRAN
+	INSERT INTO cmn.Customer(CustomerName, Address, Phone) VALUES(@CustomerName, @Address, @Phone)
+COMMIT TRAN
+
+GO
+
+

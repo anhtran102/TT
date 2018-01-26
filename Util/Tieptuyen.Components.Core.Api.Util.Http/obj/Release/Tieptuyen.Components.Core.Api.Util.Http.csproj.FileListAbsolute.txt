@@ -1,0 +1,11 @@
+F:\WORK\TIEPTUYEN\Tieptuyen\Util\Tieptuyen.Components.Core.Api.Util.Http\bin\Release\Tieptuyen.Components.Core.Api.Util.Http.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\Util\Tieptuyen.Components.Core.Api.Util.Http\bin\Release\Tieptuyen.Components.Core.Api.Util.Http.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Util\Tieptuyen.Components.Core.Api.Util.Http\bin\Release\Tieptuyen.Components.Core.Api.Util.Http.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\Util\Tieptuyen.Components.Core.Api.Util.Http\bin\Release\System.Web.Http.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Util\Tieptuyen.Components.Core.Api.Util.Http\bin\Release\System.Net.Http.Formatting.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Util\Tieptuyen.Components.Core.Api.Util.Http\bin\Release\Newtonsoft.Json.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Util\Tieptuyen.Components.Core.Api.Util.Http\bin\Release\System.Web.Http.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\Util\Tieptuyen.Components.Core.Api.Util.Http\bin\Release\System.Net.Http.Formatting.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\Util\Tieptuyen.Components.Core.Api.Util.Http\obj\Release\Tieptuyen.Components.Core.Api.Util.Http.csprojResolveAssemblyReference.cache
+F:\WORK\TIEPTUYEN\Tieptuyen\Util\Tieptuyen.Components.Core.Api.Util.Http\obj\Release\Tieptuyen.Components.Core.Api.Util.Http.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Util\Tieptuyen.Components.Core.Api.Util.Http\obj\Release\Tieptuyen.Components.Core.Api.Util.Http.pdb

@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tieptuyen.Components.Core.Api.Util</name>
+    </assembly>
+    <members>
+        <member name="T:Tieptuyen.Components.Core.Api.Util.MergeConflictResolution">
+            <summary>
+            Options for resolving conflicts when merging dictionaries
+            </summary>
+        </member>
+        <member name="F:Tieptuyen.Components.Core.Api.Util.MergeConflictResolution.ThrowError">
+            <summary>
+            Specifies an error should be thrown.
+            </summary>
+        </member>
+        <member name="F:Tieptuyen.Components.Core.Api.Util.MergeConflictResolution.UseSource">
+            <summary>
+            Specifies that the source value should be used.
+            </summary>
+        </member>
+        <member name="F:Tieptuyen.Components.Core.Api.Util.MergeConflictResolution.UseDestination">
+            <summary>
+            Specifies that the destination value should be used.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.Util.DateTimeExtensions">
+            <summary>
+            Provides extension methods for <see cref="T:System.DateTime"/> objects.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.DateTimeExtensions.HasTimePortion(System.DateTime)">
+            <summary>
+            Determines whether the specified date/time has a time portion.
+            </summary>
+            <param name="value">The value.</param>
+            <returns><c>true</c> if <paramref name="value"/> has a time portion, otherwise <c>false</c>.</returns>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.Util.DictionaryExtensions">
+            <summary>
+            Provides extension methods for dictionary objects.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.DictionaryExtensions.Merge``2(System.Collections.Generic.IDictionary{``0,``1},System.Collections.Generic.IDictionary{``0,``1})">
+            <summary>
+            Merges the specified source dictionary into the destination.
+            </summary>
+            <typeparam name="TKey">The type of the key.</typeparam>
+            <typeparam name="TValue">The type of the value.</typeparam>
+            <param name="source">The source.</param>
+            <param name="destination">The destination.</param>
+            <returns>The merged <paramref name="destination"/> dictionary.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if an item with the same key exists in both the source and destination dictionaries.</exception>
+            <exception cref="T:System.ArgumentNullException">Thrown if either <paramref name="source"/> or <paramref name="destination"/>is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.DictionaryExtensions.Merge``2(System.Collections.Generic.IDictionary{``0,``1},System.Collections.Generic.IDictionary{``0,``1},Tieptuyen.Components.Core.Api.Util.MergeConflictResolution)">
+            <summary>
+            Merges the specified source dictionary into the destination.
+            </summary>
+            <typeparam name="TKey">The type of the key.</typeparam>
+            <typeparam name="TValue">The type of the value.</typeparam>
+            <param name="source">The source.</param>
+            <param name="destination">The destination.</param>
+            <param name="conflictResolution">The conflict resolution option to use.</param>
+            <returns>The merged <paramref name="destination"/> dictionary</returns>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="conflictResolution"/> is set to <c>ThrowError</c> and an item with the same key exists in both the source and destination dictionaries.</exception>
+            <exception cref="T:System.ArgumentNullException">Thrown if either <paramref name="source"/> or <paramref name="destination"/>is <c>null</c>.</exception>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.Util.Enumerable">
+            <summary>
+            Provides extension methods to classes which implement the <see cref="T:System.Collections.Generic.IEnumerable`1"/> interface.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.Enumerable.ToCollection``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Creates a collection from an arbitrary collection of objects.
+            </summary>
+            <typeparam name="T">The type of the object.</typeparam>
+            <param name="objs">The objects.</param>
+            <returns>A <c>Collection</c> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.Enumerable.Each``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">
+            <summary>
+            Preforms an action for each object in a collection.
+            </summary>
+            <typeparam name="T">The type of object in the collection.</typeparam>
+            <param name="objs">The objects in the collection.</param>
+            <param name="action">The action to perform.</param>
+            <exception cref="T:System.ArgumentNullException">action;The action cannot be null.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.Enumerable.Distinct``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``0,System.Boolean})">
+            <summary>
+            Returns distinct elements from a sequence.
+            </summary>
+            <typeparam name="TSource">The type of the elements of source.</typeparam>
+            <param name="source">The sequence to remove duplicate elements from.</param>
+            <param name="predicate">The predicate by which it is determined that two items are equal.</param>
+            <returns> A list of distinct items.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="predicate"/> is <c>null</c>.</exception>
+            <remarks>This method returns <c>null</c> if <paramref name="source"/> is <c>null</c>.</remarks>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.Enumerable.ToDictionary``2(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{``0,``1}})">
+            <summary>
+            Creates a dictionary from a collection of key/value pairs.
+            </summary>
+            <typeparam name="TKey">The type of the key.</typeparam>
+            <typeparam name="TValue">The type of the value.</typeparam>
+            <param name="keyValuePairs">The key/value pairs.</param>
+            <returns>A new dictionary populated with the pairs of keys and values.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="keyValuePairs"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.ExelHelper.GetSheetsFromWorkbook(System.String)">
+            <summary>
+            Get sheets list from excel file
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.ExelHelper.GetConnectionStringFromFile(System.String)">
+            <summary>
+            get connection string corresponde file type
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.ExelHelper.getSheetData(System.String,System.String)">
+            <summary>
+            get dataTable from sheet
+            </summary>
+            <param name="strConn"></param>
+            <param name="sheet"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.Util.ObjectExtensions">
+            <summary>
+            Provides extension methods for all objects.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.ObjectExtensions.ToCultureInvariantString(System.Object)">
+            <summary>
+            Returns the culture-invariant string representation of an object.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns>The culture-invariant <see cref="T:System.String"/>.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="obj"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.ObjectExtensions.DeepClone``1(``0)">
+            <summary>
+            Deep clones an object that is marked as serializable.
+            </summary>
+            <typeparam name="T">The type of the object</typeparam>
+            <param name="obj">The object</param>
+            <returns>A cloned object</returns>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.Util.Parse">
+            <summary>
+            A class for performing parsing operations.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.Parse.As``1(System.String)">
+            <summary>
+            Parses a string as the specified type.
+            </summary>
+            <typeparam name="T">The type to parse the string as.</typeparam>
+            <param name="value">The string value.</param>
+            <returns>A <see cref="T:Tieptuyen.Components.Core.Api.Util.ParseDescriptor`1"/> object for performing the parse operation.</returns>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.Util.ParseDescriptor`1">
+            <summary>
+            The descriptor for a parsing operation. 
+            </summary>
+            <typeparam name="T">The type to parse the input as.</typeparam>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.ParseDescriptor`1.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:Tieptuyen.Components.Core.Api.Util.ParseDescriptor`1"/> class.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.ParseDescriptor`1.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.Api.Util.ParseDescriptor`1"/> class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.ParseDescriptor`1.WithDefault">
+            <summary>
+            Performs the parse with a default value.
+            </summary>
+            <returns>The parsed value or the default value for <typeparamref name="T"/> if the string cannot be parsed.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.ParseDescriptor`1.WithDefault(`0)">
+            <summary>
+            Performs the parse with a default value.
+            </summary>
+            <param name="defaultValue">The default value.</param>
+            <returns>The parsed value or <paramref name="defaultValue"/> if the string cannot be parsed.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.ParseDescriptor`1.WithNoDefault">
+            <summary>
+            Performs the parse with no default value.
+            </summary>
+            <returns>The parsed value.</returns>
+            <exception cref="T:System.InvalidOperationException">Thrown if <typeparamref name="T"/> doesn't support parsing.</exception>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.Util.StringExtensions">
+            <summary>
+            Provides extension methods for the <see cref="T:System.String"/> objects.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.StringExtensions.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:Tieptuyen.Components.Core.Api.Util.StringExtensions"/> class.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.StringExtensions.NullifyIfEmpty(System.String)">
+            <summary>
+            Nullifies if the string if it is empty.
+            </summary>
+            <param name="value">The string value.</param>
+            <returns><c>null</c> if <paramref name="value"/> is empty; otherwise it returns <paramref name="value"/>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.StringExtensions.InitializeIfNull(System.String)">
+            <summary>
+            Initializes the string if it is <c>null</c>.
+            </summary>
+            <param name="value">The string value.</param>
+            <returns>An empty string, if <paramref name="value"/> is <c>null</c>; otherwise it returns <paramref name="value"/>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.StringExtensions.EscapeForXml(System.String)">
+            <summary>
+            Escapes the specified string for XML.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>The escaped <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.StringExtensions.CaseInsensitiveReplace(System.String,System.String,System.String)">
+            <summary>
+            Performs a case-insensitive string replacement.
+            </summary>
+            <param name="value">The string value to perform the replacement on.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">The new value.</param>
+            <returns>The modified string.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="oldValue"/> is either <c>null</c> or empty.</exception>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.Util.XmlGenerator">
+            <summary>
+            A simple XML generator.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.XmlGenerator.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:Tieptuyen.Components.Core.Api.Util.XmlGenerator"/> class.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.XmlGenerator.#ctor">
+            <summary>
+            Prevents a default instance of the <see cref="T:Tieptuyen.Components.Core.Api.Util.XmlGenerator"/> class from being created.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.XmlGenerator.GenerateXml(System.Object)">
+            <summary>
+            Helper method for generating XML.
+            </summary>
+            <param name="data">The data to be represented by the generated XML.</param>
+            <returns>The generated XML as a <see cref="T:System.String"/>; or <c>null</c> if <paramref name="data"/> is <c>null</c>.</returns>
+            <exception cref="T:System.Xml.XmlException">Throw if the data does not have one, and only one, root element.</exception>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.Util.XmlGenerator.Current">
+            <summary>
+            Gets the current XML generator.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.Util.XmlSerialization">
+            <summary>
+            Provides extension methods for performing XML serialization and de-serialization.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.XmlSerialization.SerializeAsXml``1(``0)">
+            <summary>
+            Serializes an object as XML.
+            </summary>
+            <typeparam name="T">The type of the object to serialize.</typeparam>
+            <param name="obj">The object to serialize.</param>
+            <returns>The serialized object as an XML <see cref="T:System.String"/>; or <c>null</c> if <paramref name="obj"/> is <c>null</c>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.XmlSerialization.DeserializeAs``1(System.String)">
+            <summary>
+            Deserializes the string as the specified type.
+            </summary>
+            <typeparam name="T">The type to deserialize as.</typeparam>
+            <param name="xml">The XML.</param>
+            <returns>The deserialized object.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="xml"/> is <c>null</c> or empty.</exception>
+        </member>
+    </members>
+</doc>

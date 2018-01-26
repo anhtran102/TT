@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tieptuyen.Components.Core.Api.ObjectModel</name>
+    </assembly>
+    <members>
+        <member name="T:Tieptuyen.Components.Core.Api.ObjectModel.After">
+            <summary>
+            Class providing functionality <b>after</b> which the comparison will be performed.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.ObjectModel.After.CheckForNulls``1(``0,``0,System.Func{``0,``0,System.Int32})">
+            <summary>
+            Checks for nulls.
+            </summary>
+            <typeparam name="T">The types for the comparison.</typeparam>
+            <param name="x">Value x.</param>
+            <param name="y">Value y.</param>
+            <param name="comparison">The comparison.</param>
+            <returns>The result of the comparison as an <see cref="T:System.Int32"/>.</returns>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.ObjectModel.OrderBy`1">
+            <summary>
+            Represents the specification by which objects in a collection are to be ordered.
+            </summary>
+            <typeparam name="T">The type of the object being sorted.</typeparam>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.ObjectModel.OrderBy`1.#ctor(System.Func{`0,System.IComparable})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.Api.ObjectModel.OrderBy`1"/> class.
+            </summary>
+            <param name="orderFunc">The order function.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="orderFunc"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.ObjectModel.OrderBy`1.Ascending">
+            <summary>
+            Sorts the objects in ascending order.
+            </summary>
+            <returns>A comparison object for sorting the results in ascending order.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.ObjectModel.OrderBy`1.Descending">
+            <summary>
+            Sorts the objects in ascending order.
+            </summary>
+            <returns>A comparison object for sorting the results in ascending order.</returns>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.ObjectModel.IDisplayOrderable">
+            <summary>
+            Defines an object which can ordered on a display along with other objects of the same type.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.ObjectModel.IDisplayOrderable.DisplayOrder">
+            <summary>
+            Gets the display order.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.ObjectModel.INameOrderable">
+            <summary>
+            Defines an object which can be ordered by name.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.ObjectModel.INameOrderable.Name">
+            <summary>
+            Gets the name.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.ObjectModel.NameOrder">
+            <summary>
+            Defines how objects should be sorted according to their name.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.ObjectModel.NameOrder.Ascending">
+            <summary>
+            Gets the comparison to sort objects in ascending order.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.ObjectModel.NameOrder.Descending">
+            <summary>
+            Gets the comparison to sort objects in ascending order.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.ObjectModel.NotFoundException">
+            <summary>
+            An exception which is thrown when an item cannot be found in a particular data source, for example in a database.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.ObjectModel.NotFoundException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.Api.ObjectModel.NotFoundException"/> class.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.ObjectModel.NotFoundException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.Api.ObjectModel.NotFoundException"/> class.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.ObjectModel.NotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.Api.ObjectModel.NotFoundException"/> class.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.ObjectModel.NotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.Api.ObjectModel.NotFoundException"/> class.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo"/> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext"/> that contains contextual information about the source or destination.</param>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.ObjectModel.Order">
+            <summary>
+            Helper class for ordering objects in a collection.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.ObjectModel.Order.By``1(System.Func{``0,System.IComparable})">
+            <summary>
+            Specifies the function by which objects are to be ordered.
+            </summary>
+            <typeparam name="T">The type of the object being ordered.</typeparam>
+            <param name="orderFunc">The order function.</param>
+            <returns>A specification for ordering the objects.</returns>
+        </member>
+    </members>
+</doc>

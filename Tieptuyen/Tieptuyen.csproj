@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3613F596-7A14-4569-BAFE-7C7D30E21814}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tieptuyen</RootNamespace>
+    <AssemblyName>Tieptuyen</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>http://localhost/TICKET/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>78097BF726FE4A8525451C511A5FB41142A2E5B3</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Tieptuyen_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Mvc">
+      <HintPath>..\packages\Unity.Mvc.4.0.1\lib\net45\Microsoft.Practices.Unity.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Linq.Dynamic">
+      <HintPath>..\packages\System.Linq.Dynamic.1.0.6\lib\net40\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.40804.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Reporting, Version=8.0.14.225, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Telerik\Reporting Q1 2014\Bin\Telerik.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=8.0.14.225, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Telerik\Reporting Q1 2014\Bin\Telerik.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls, Version=2014.1.226.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2014.1.226.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2014.1.226.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2014.1.226.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="WebActivatorEx">
+      <HintPath>..\packages\WebActivatorEx.2.0.6\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\UnityConfig.cs" />
+    <Compile Include="App_Start\UnityMvcActivator.cs" />
+    <Compile Include="TicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicketForm.Designer.cs">
+      <DependentUpon>TicketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOptions.Designer.cs">
+      <DependentUpon>FormOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportTicket.Designer.cs">
+      <DependentUpon>ImportTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachineApplication.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuContext.cs" />
+    <Compile Include="MyGridAggregateFunction.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RadGridReport.cs" />
+    <Compile Include="SummaryRowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SummaryRowForm.Designer.cs">
+      <DependentUpon>SummaryRowForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TicketForm.resx">
+      <DependentUpon>TicketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOptions.resx">
+      <DependentUpon>FormOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportTicket.resx">
+      <DependentUpon>ImportTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SummaryRowForm.resx">
+      <DependentUpon>SummaryRowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Tieptuyen_TemporaryKey.pfx" />
+    <None Include="Web.config.install.xdt" />
+    <None Include="Web.config.uninstall.xdt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\open_icon.gif" />
+    <None Include="Resources\import1_32.png" />
+    <None Include="Resources\Air-icon.png" />
+    <None Include="Resources\userSetting.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\transport.png" />
+    <None Include="Resources\transfer.png" />
+    <None Include="Resources\table_excel.png" />
+    <None Include="Resources\suppliers_2.png" />
+    <None Include="Resources\suppliers.png" />
+    <None Include="Resources\shield.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\Search_16x16.png" />
+    <None Include="Resources\search_2.png" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\save2.png" />
+    <None Include="Resources\return.png" />
+    <None Include="Resources\return blue 16x16.png" />
+    <None Include="Resources\return 16x16.png" />
+    <None Include="Resources\report.png" />
+    <None Include="Resources\Repair.png" />
+    <None Include="Resources\remove_red 32x32.png" />
+    <None Include="Resources\remove.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\preview.jpg" />
+    <None Include="Resources\planning-07-32.png" />
+    <None Include="Resources\plan.png" />
+    <None Include="Resources\pay1.png" />
+    <None Include="Resources\noimages.jpg" />
+    <None Include="Resources\no_image1.gif" />
+    <None Include="Resources\no_image.gif" />
+    <None Include="Resources\next.png" />
+    <None Include="Resources\mymoney.png" />
+    <None Include="Resources\Msn_Buddy-1min.png04_10_10png.png" />
+    <None Include="Resources\Msn_Buddy-1min.png04_10_10.png" />
+    <None Include="Resources\modify1.png" />
+    <None Include="Resources\LogoBanner.jpg" />
+    <None Include="Resources\LOGO THIAN.png" />
+    <None Include="Resources\InOut.jpg" />
+    <None Include="Resources\import.png" />
+    <None Include="Resources\Icon_Warehouse.jpg" />
+    <None Include="Resources\house1.png" />
+    <None Include="Resources\general.png" />
+    <None Include="Resources\doc.png" />
+    <None Include="Resources\delivery.png" />
+    <None Include="Resources\del.png" />
+    <None Include="Resources\datban.png" />
+    <None Include="Resources\construction_2.png" />
+    <None Include="Resources\construction.png" />
+    <None Include="Resources\conguoi.png" />
+    <None Include="Resources\chuaconguoi1.png" />
+    <None Include="Resources\check-64.png" />
+    <None Include="Resources\check.png" />
+    <None Include="Resources\Cell.jpg" />
+    <None Include="Resources\boss.png" />
+    <None Include="Resources\bl.png" />
+    <None Include="Resources\barcode.png" />
+    <None Include="Resources\bannerTA-2 copy.jpg" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\back 32.png" />
+    <None Include="Resources\add2.png" />
+    <None Include="Resources\accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessObjects\Tieptuyen.Components.Core.Api.BusinessObjects\Tieptuyen.Components.Core.Api.BusinessObjects.csproj">
+      <Project>{e37a3d96-d018-41de-9d0b-02d66c6a49c4}</Project>
+      <Name>Tieptuyen.Components.Core.Api.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Controllers\Tieptuyen.Components.Core.Api.Controllers\Tieptuyen.Components.Core.Api.Controllers.csproj">
+      <Project>{1d69b8ff-8b0a-4a47-9171-7ef5477900f0}</Project>
+      <Name>Tieptuyen.Components.Core.Api.Controllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\Tieptuyen.Components.Core.Api.DataAccess.Repository\Tieptuyen.Components.Core.Api.DataAccess.Repository.csproj">
+      <Project>{97a64c69-e7c8-4200-b18e-29944d1e6153}</Project>
+      <Name>Tieptuyen.Components.Core.Api.DataAccess.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\Tieptuyen.Components.Core.Api.DataAccess.SqlServer\Tieptuyen.Components.Core.Api.DataAccess.SqlServer.csproj">
+      <Project>{dc64e54b-a4f7-4d03-9496-c0b124583f38}</Project>
+      <Name>Tieptuyen.Components.Core.Api.DataAccess.SqlServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\Tieptuyen.Components.Core.Api.DataAccess\Tieptuyen.Components.Core.Api.DataAccess.csproj">
+      <Project>{bbcf265e-ef06-4052-9330-ce27c0dc5460}</Project>
+      <Name>Tieptuyen.Components.Core.Api.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Globalization\Tieptuyen.Component.Globalization.Api.Default\Tieptuyen.Components.Globalization.Api.Default.csproj">
+      <Project>{b5703ca3-6784-48da-934a-18729b45615c}</Project>
+      <Name>Tieptuyen.Components.Globalization.Api.Default</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Globalization\Tieptuyen.Components.Globalization.Api.Controllers\Tieptuyen.Components.Globalization.Api.Controllers.csproj">
+      <Project>{af30795e-d875-4f4b-97c3-9d37c5310e4b}</Project>
+      <Name>Tieptuyen.Components.Globalization.Api.Controllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Globalization\Tieptuyen.Components.Globalization.Api\Tieptuyen.Components.Globalization.Api.csproj">
+      <Project>{84f29a50-74d7-46e0-8200-3e1d7c04252e}</Project>
+      <Name>Tieptuyen.Components.Globalization.Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Security\Crypto\Tieptuyen.Api.Security.Crypto.csproj">
+      <Project>{3add81fd-2644-4c8f-b799-4153de4ebb76}</Project>
+      <Name>Tieptuyen.Api.Security.Crypto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\Tieptuyen.Components.Core.Api.Services\Tieptuyen.Components.Core.Api.Services.csproj">
+      <Project>{8610609c-f065-4412-b757-c4320b8e38cc}</Project>
+      <Name>Tieptuyen.Components.Core.Api.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Tieptuyen.Components.Core.Api.Util\Tieptuyen.Components.Core.Api.Util.csproj">
+      <Project>{902b82a9-329b-4e14-bce3-8f23b51f9205}</Project>
+      <Name>Tieptuyen.Components.Core.Api.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

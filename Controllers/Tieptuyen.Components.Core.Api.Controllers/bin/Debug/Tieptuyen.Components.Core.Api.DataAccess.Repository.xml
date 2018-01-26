@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tieptuyen.Components.Core.Api.DataAccess.Repository</name>
+    </assembly>
+    <members>
+        <member name="T:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository">
+            <summary>
+            The repository for handling data-access operations relating to user access control.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.SelectUserSettings(System.String,System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.SelectUserSettings(System.String,System.String,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.UpdateUserSettings(Tieptuyen.Components.Core.Api.BusinessObjects.UserSettings,Tieptuyen.Components.Core.Api.BusinessObjects.UserSettingsUpdateOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.UpdateUserSettings(Tieptuyen.Components.Core.Api.BusinessObjects.UserSettings,Tieptuyen.Components.Core.Api.BusinessObjects.UserSettingsUpdateOptions,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.SelectProfiles">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.SelectProfiles(Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.Insert(Tieptuyen.Components.Core.Api.BusinessObjects.Profile)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.Insert(Tieptuyen.Components.Core.Api.BusinessObjects.Profile,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.Update(Tieptuyen.Components.Core.Api.BusinessObjects.Profile,Tieptuyen.Components.Core.Api.BusinessObjects.ProfileUpdateOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.Update(Tieptuyen.Components.Core.Api.BusinessObjects.Profile,Tieptuyen.Components.Core.Api.BusinessObjects.ProfileUpdateOptions,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.Delete(Tieptuyen.Components.Core.Api.BusinessObjects.Profile)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.Delete(Tieptuyen.Components.Core.Api.BusinessObjects.Profile,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.IsProfileEmpty(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.IsProfileEmpty(System.Int32,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.SelectUsers">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.SelectUsers(Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.SelectUser(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.SelectUser(System.Int32,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.SelectUser(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.SelectUser(System.String,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.Insert(Tieptuyen.Components.Core.Api.BusinessObjects.User)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.Insert(Tieptuyen.Components.Core.Api.BusinessObjects.User,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.Update(Tieptuyen.Components.Core.Api.BusinessObjects.User)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.Update(Tieptuyen.Components.Core.Api.BusinessObjects.User,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.Delete(Tieptuyen.Components.Core.Api.BusinessObjects.User)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.Delete(Tieptuyen.Components.Core.Api.BusinessObjects.User,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.ResetPassword(Tieptuyen.Components.Core.Api.BusinessObjects.PasswordReset)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.ResetPassword(Tieptuyen.Components.Core.Api.BusinessObjects.PasswordReset,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.GetPassword(System.String)">
+            <summary>
+            Get the password stored for the user that has the given user name
+            </summary>
+            <param name="userName">The user name</param>
+            <returns>The password</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.GetPreferredLanguage(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.GetAllRrimaryRoles(Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.GetPrimaryRoleWidgetMappings(System.Int32,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.UpdateUserMulti(Tieptuyen.Components.Core.Api.BusinessObjects.MultiUsers,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.MultipleUpdate(System.Int32[],Tieptuyen.Components.Core.Api.BusinessObjects.Profile,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.GetUserFilterValues(System.Int32,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.Delete(System.Int32,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.GetMembersOfUserProfile(System.Int32,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.AssignUserToProfile(System.Int32,System.Int32,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.GetWidgetPermissionByPrimaryRole(System.Int32,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.Repository.AccessControlRepository.VerifyWindowsUser(System.String,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,14 @@
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api.Controllers\bin\Debug\Tieptuyen.Components.Globalization.Api.Controllers.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api.Controllers\bin\Debug\Tieptuyen.Components.Globalization.Api.Controllers.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api.Controllers\bin\Debug\Tieptuyen.Components.Globalization.Api.Controllers.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api.Controllers\bin\Debug\System.Web.Http.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api.Controllers\bin\Debug\Tieptuyen.Components.Globalization.Api.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api.Controllers\bin\Debug\System.Net.Http.Formatting.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api.Controllers\bin\Debug\Newtonsoft.Json.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api.Controllers\bin\Debug\Tieptuyen.Components.Globalization.Api.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api.Controllers\bin\Debug\Tieptuyen.Components.Globalization.Api.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api.Controllers\bin\Debug\System.Web.Http.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api.Controllers\bin\Debug\System.Net.Http.Formatting.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api.Controllers\obj\Debug\Tieptuyen.Components.Globalization.Api.Controllers.csprojResolveAssemblyReference.cache
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api.Controllers\obj\Debug\Tieptuyen.Components.Globalization.Api.Controllers.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api.Controllers\obj\Debug\Tieptuyen.Components.Globalization.Api.Controllers.pdb

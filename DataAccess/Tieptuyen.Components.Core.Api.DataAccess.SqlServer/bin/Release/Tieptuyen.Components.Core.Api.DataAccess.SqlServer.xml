@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tieptuyen.Components.Core.Api.DataAccess.SqlServer</name>
+    </assembly>
+    <members>
+        <member name="T:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.Extensions">
+            <summary>
+            Provides extension methods for use during data access operations.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.Extensions.Process(System.Collections.Generic.IEnumerable{System.Object},System.Action{System.Object},System.Action{System.Object},System.Action{System.Object})">
+            <summary>
+            Processes the output (inserts, updates and deletes) from a stored procedure.
+            </summary>
+            <param name="output">The output.</param>
+            <param name="onRowInserted">The action to perform for each row inserted.</param>
+            <param name="onRowUpdated">The action to perform for each row updated.</param>
+            <param name="onRowDeleted">The action to perform for each row deleted.</param>
+            <returns>The original output.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="output"/> is null.</exception>
+            <remarks>Each object in the collection specified by the <paramref name="output"/> parameter, must have a property named <c>Action</c> of type <see cref="T:System.String"/>.
+            The property can have a value of "INSERT", "UPDATE" or "DELETE"</remarks>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.KDataRepository">
+            <summary>
+            A repository for performing data-access objects against the <c>kData</c> database.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.Repository">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.Repository.BeginWork">
+            <inheritdoc/>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.Repository.ConnectionString">
+            <summary>
+            Gets the connection string.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.KDataRepository.ConnectionString">
+            <inheritdoc/>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.SqlDynamicParameters">
+            <summary>
+            A dynamic parameters object which supports SQL-Server-specific functionality.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.SqlDynamicParameters.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.SqlDynamicParameters"/> class.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.SqlDynamicParameters.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.SqlDynamicParameters"/> class.
+            </summary>
+            <param name="template">The template to use. Can be an anonymous type or a DynamicParameters bag</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.SqlDynamicParameters.AddAsTable(System.String,System.Object[])">
+            <summary>
+            Adds the data as a table-valued parameter.
+            </summary>
+            <param name="name">The name of the parameter.</param>
+            <param name="data">The data.</param>
+            <exception cref="T:System.ArgumentException">
+            Thrown when a table-valued parameter with this name has already been added.
+            or
+            <paramref name="name"/> is blank.
+            </exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.SqlDynamicParameters.AddAsTable``1(System.String,System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Adds the data as a table-valued parameter.
+            </summary>
+            <typeparam name="T">The type of the data</typeparam>
+            <param name="name">The name of the parameter.</param>
+            <param name="data">The data.</param>
+            <exception cref="T:System.ArgumentException">Thrown when a table-valued parameter with this name has already been added.
+            or
+            <paramref name="name"/> is blank.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.SqlDynamicParameters.Dapper#SqlMapper#IDynamicParameters#AddParameters(System.Data.IDbCommand,Dapper.SqlMapper.Identity)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.SqlDynamicParameters.AddParameters(System.Data.IDbCommand,Dapper.SqlMapper.Identity)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.UserDefinedType">
+            <summary>
+            Provides extensions methods for working with SQL-Server user-defined types.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.UserDefinedType.AsEntities(System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            Converts a collection of integer IDs to an array of objects for use with the <c>cmn.Entity</c> type.
+            </summary>
+            <param name="ids">The ids.</param>
+            <returns>An array of entity objects.</returns>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.SqlUnitOfWork">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.SqlUnitOfWork.#ctor(System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.SqlUnitOfWork"/> class.
+            </summary>
+            <param name="transaction">The SQL transaction.</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.SqlUnitOfWork.Finalize">
+            <summary>
+            Finalizes an instance of the <see cref="T:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.SqlUnitOfWork"/> class.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.SqlUnitOfWork.Connection">
+            <summary>
+            Gets or sets the SQL-Server connection.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.DataAccess.SqlServer.SqlUnitOfWork.Transaction">
+            <summary>
+            Gets or sets the SQL-Server transaction.
+            </summary>
+        </member>
+    </members>
+</doc>

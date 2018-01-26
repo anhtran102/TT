@@ -1,0 +1,11 @@
+
+CREATE PROCEDURE [cmn].[GetAllInputCash]	
+AS
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
+SET NOCOUNT ON
+
+SELECT Id, Cash, FromAccount, ToAccount, Payer, PayDate  FROM cmn.InputCash WHERE Deleted = 0
+
+GO
+
+

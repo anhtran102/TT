@@ -1,0 +1,11 @@
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api\bin\Debug\Tieptuyen.Components.Globalization.Api.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api\bin\Debug\Tieptuyen.Components.Globalization.Api.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api\bin\Debug\Tieptuyen.Components.Globalization.Api.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api\bin\Debug\System.Web.Http.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api\bin\Debug\System.Net.Http.Formatting.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api\bin\Debug\Newtonsoft.Json.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api\bin\Debug\System.Web.Http.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api\bin\Debug\System.Net.Http.Formatting.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api\obj\Debug\Tieptuyen.Components.Globalization.Api.csprojResolveAssemblyReference.cache
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api\obj\Debug\Tieptuyen.Components.Globalization.Api.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Globalization\Tieptuyen.Components.Globalization.Api\obj\Debug\Tieptuyen.Components.Globalization.Api.pdb

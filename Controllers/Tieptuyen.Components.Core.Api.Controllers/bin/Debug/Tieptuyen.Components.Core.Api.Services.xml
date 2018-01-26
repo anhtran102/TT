@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tieptuyen.Components.Core.Api.Services</name>
+    </assembly>
+    <members>
+        <member name="T:Tieptuyen.Components.Core.Api.Services.AccessControlService">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.#ctor(Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository,Tieptuyen.Components.Globalization.Api.ILanguageManager)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.Api.Services.AccessControlService"/> class.
+            </summary>
+            <param name="accessControlRepository">The access control repository to use.</param>
+            <param name="versioningService">The versioning service.</param>
+            <param name="languageManager">The language manager.</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.GetUserSettings(System.String,System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.UpdateUserSettings(Tieptuyen.Components.Core.Api.BusinessObjects.UserSettings,Tieptuyen.Components.Core.Api.BusinessObjects.UserSettingsUpdateOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.GetProfiles(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.Add(Tieptuyen.Components.Core.Api.BusinessObjects.Profile)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.Update(Tieptuyen.Components.Core.Api.BusinessObjects.Profile)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.Update(Tieptuyen.Components.Core.Api.BusinessObjects.Profile,Tieptuyen.Components.Core.Api.BusinessObjects.ProfileUpdateOptions)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.Delete(Tieptuyen.Components.Core.Api.BusinessObjects.Profile)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.IsProfileEmpty(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.GetUsers">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.GetUser(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.GetUser(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.Add(Tieptuyen.Components.Core.Api.BusinessObjects.User)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.Update(Tieptuyen.Components.Core.Api.BusinessObjects.User)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.Delete(Tieptuyen.Components.Core.Api.BusinessObjects.User,System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.IsUserNameInUse(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.ResetPassword(Tieptuyen.Components.Core.Api.BusinessObjects.PasswordReset,System.String,System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.GetPrimaryRoleWidgetMappings(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.GetAllPrimaryRoles">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.UpdateUserMulti(Tieptuyen.Components.Core.Api.BusinessObjects.MultiUsers)">
+            <inheritdoc/>                  
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.MultipleUpdate(System.Int32[],Tieptuyen.Components.Core.Api.BusinessObjects.Profile)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.GetUserFilterValues(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.Delete(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.GetMembersOfUserProfile(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.AssignUserToProfile(System.Int32,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.GetWidgetPermissionByPrimaryRole(System.Int32,System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.AccessControlService.VerifyWindowsUser(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.Services.DateService">
+            <summary>
+            Provides functionality for working with dates and times.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.Services.IDateService">
+            <summary>
+            Provides functionality for working with dates and times.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.IDateService.GetCurrentDate">
+            <summary>
+            Gets the current date.
+            </summary>
+            <returns>A <see cref="T:System.DateTime"/> structure representing the current date.</returns>
+            <remarks>The time portion is always set to <c>00:00:00</c>.</remarks>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.IDateService.GetCurrentDateTime">
+            <summary>
+            Gets the current date time.
+            </summary>
+            <returns>A <see cref="T:System.DateTime"/> structure representing the current date and time.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.IDateService.GetCurrentUtcDateTime">
+            <summary>
+            Gets the current UTC date time.
+            </summary>
+            <returns>A <see cref="T:System.DateTime"/> structure representing the current UTC date and time.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.DateService.#ctor(Tieptuyen.Components.Core.Api.Configuration.IConfigurationManager)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.Api.Services.DateService"/> class.
+            </summary>
+            <param name="configurationManager">The configuration manager.</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.DateService.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.Api.Services.DateService"/> class.
+            </summary>
+            <param name="configurationManager">The configuration manager.</param>
+            <remarks>This is for unit tests only.</remarks>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.DateService.GetCurrentDate">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.DateService.GetCurrentDateTime">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.DateService.GetCurrentUtcDateTime">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.SystemItemService.AddAccount(Tieptuyen.Components.Core.Api.BusinessObjects.Account)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.SystemItemService.AddInputCash(Tieptuyen.Components.Core.Api.BusinessObjects.InputCash)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Services.SystemItemService.UpdateInputCash(Tieptuyen.Components.Core.Api.BusinessObjects.InputCash)">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>

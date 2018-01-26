@@ -1,0 +1,16 @@
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore.TestHarness\bin\Release\Tieptuyen.Components.Core.AssetStore.TestHarness.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore.TestHarness\bin\Release\Tieptuyen.Components.Core.AssetStore.TestHarness.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore.TestHarness\bin\Release\System.Net.Http.Formatting.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore.TestHarness\bin\Release\System.Web.Http.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore.TestHarness\bin\Release\Tieptuyen.Components.Core.AssetStore.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore.TestHarness\bin\Release\Tieptuyen.Components.Core.Api.Util.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore.TestHarness\bin\Release\Newtonsoft.Json.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore.TestHarness\bin\Release\Tieptuyen.Components.Core.AssetStore.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore.TestHarness\bin\Release\Tieptuyen.Components.Core.AssetStore.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore.TestHarness\bin\Release\System.Net.Http.Formatting.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore.TestHarness\bin\Release\System.Web.Http.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore.TestHarness\bin\Release\Tieptuyen.Components.Core.Api.Util.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore.TestHarness\bin\Release\Tieptuyen.Components.Core.Api.Util.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore.TestHarness\obj\Release\Tieptuyen.Components.Core.AssetStore.TestHarness.csprojResolveAssemblyReference.cache
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore.TestHarness\obj\Release\Tieptuyen.Components.Core.AssetStore.TestHarness.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore.TestHarness\obj\Release\Tieptuyen.Components.Core.AssetStore.TestHarness.pdb

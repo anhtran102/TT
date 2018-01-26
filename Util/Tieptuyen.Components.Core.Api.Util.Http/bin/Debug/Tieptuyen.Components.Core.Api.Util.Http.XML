@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tieptuyen.Components.Core.Api.Util.Http</name>
+    </assembly>
+    <members>
+        <member name="T:Tieptuyen.Components.Core.Api.Util.Http.ApiControllerExtensions">
+            <summary>
+            Provides extension methods for sub-classes of the <see cref="T:System.Web.Http.ApiController"/> class.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Util.Http.ApiControllerExtensions.GetCurrentUser(System.Web.Http.ApiController)">
+            <summary>
+            Gets the current user from the incoming request.
+            </summary>
+            <param name="apiController">The API controller.</param>
+            <returns>The current user's username as a <see cref="T:System.String"/>.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="apiController"/> is null.</exception>
+        </member>
+    </members>
+</doc>

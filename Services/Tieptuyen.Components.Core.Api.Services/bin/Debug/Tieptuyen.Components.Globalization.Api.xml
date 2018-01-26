@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tieptuyen.Components.Globalization.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Tieptuyen.Components.Globalization.Api.ApiControllerExtensions">
+            <summary>
+            Provides extension methods for sub-classes of the <see cref="T:System.Web.Http.ApiController"/> class.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Globalization.Api.ApiControllerExtensions.GetPreferredLanguageId(System.Web.Http.ApiController)">
+            <summary>
+            Gets the identifier for the preferred language from the HTTP request headers.
+            </summary>
+            <param name="apiController">The API controller.</param>
+            <returns>The language identifier as a string.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="apiController"/> is <c>null</c>.</exception>
+            <remarks>
+            If the <c>locale</c> HTTP header is either missing or empty, the default language is returned. 
+            </remarks>
+        </member>
+        <member name="T:Tieptuyen.Components.Globalization.Api.ILanguageManager">
+            <summary>
+            A manager for managing languages within the system.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Globalization.Api.ILanguageManager.GetSupportedLanguages">
+            <summary>
+            Gets an array of the currently-supported languages.
+            </summary>
+            <returns>An array of <see cref="T:Tieptuyen.Components.Globalization.Api.Language"/>objects.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Globalization.Api.ILanguageManager.GetAllTranslations(System.String)">
+            <summary>
+            Gets all the translations for the specified language.
+            </summary>
+            <param name="languageId">The language ID.</param>
+            <returns>A Dictionary{int, string} of all the translations against their IDs</returns>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="languageId"/> is <c>null</c> or empty.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Globalization.Api.ILanguageManager.GetText(System.String,System.String)">
+            <summary>
+            Gets the text for a particular translation ID.
+            </summary>
+            <param name="translationId">The translation ID.</param>
+            <param name="languageId">The language ID.</param>
+            <returns>The text as a <see cref="T:System.String"/>.  If there is no translation for <paramref name="translationId"/>, an empty string is returned.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="languageId"/> is <c>null</c> or empty.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Globalization.Api.ILanguageManager.GetText(System.String,System.String,System.Object[])">
+            <summary>
+            Gets the text for a particular translation ID, substituting any placeholders for the values specified.
+            </summary>
+            <param name="translationId">The translation ID.</param>
+            <param name="languageId">The language ID.</param>
+            <param name="values">The values to substitute in.</param>
+            <returns>The text as a <see cref="T:System.String"/>.  If there is no translation for <paramref name="translationId"/>, an empty string is returned.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="languageId"/> is <c>null</c> or empty.</exception>
+        </member>
+        <member name="T:Tieptuyen.Components.Globalization.Api.Language">
+            <summary>
+            Represents a language supported by the system.
+            </summary>
+        </member>
+        <member name="F:Tieptuyen.Components.Globalization.Api.Language.DefaultLanguage">
+            <summary>
+            The default language.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Globalization.Api.Language.Id">
+            <summary>
+            Gets or sets the ID.
+            </summary>
+            <remarks>
+            The language ID is in the form of a culture specifier, for example:
+            <list type="table">
+            <listheader><term>ID</term><description>Description</description></listheader>
+            <item><term>en-GB</term><description>English (British)</description></item>
+            <item><term>en-US</term><description>English (United States)</description></item>
+            <item><term>de-DE</term><description>Deutsch (Deutschland)</description></item>
+            </list>
+            </remarks>
+        </member>
+        <member name="P:Tieptuyen.Components.Globalization.Api.Language.Name">
+            <summary>
+            Gets or sets the name of the language.
+            </summary>
+        </member>
+    </members>
+</doc>

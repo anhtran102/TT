@@ -1,0 +1,5 @@
+F:\WORK\TIEPTUYEN\Tieptuyen\Security\Crypto\bin\Debug\Tieptuyen.Api.Security.Crypto.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Security\Crypto\bin\Debug\Tieptuyen.Api.Security.Crypto.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\Security\Crypto\obj\Debug\Tieptuyen.Api.Security.Crypto.csprojResolveAssemblyReference.cache
+F:\WORK\TIEPTUYEN\Tieptuyen\Security\Crypto\obj\Debug\Tieptuyen.Api.Security.Crypto.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Security\Crypto\obj\Debug\Tieptuyen.Api.Security.Crypto.pdb

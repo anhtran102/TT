@@ -1,0 +1,8 @@
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore\bin\Debug\Tieptuyen.Components.Core.AssetStore.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore\bin\Debug\Tieptuyen.Components.Core.AssetStore.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore\bin\Debug\Tieptuyen.Components.Core.Api.Util.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore\bin\Debug\Tieptuyen.Components.Core.Api.Util.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore\bin\Debug\Tieptuyen.Components.Core.Api.Util.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore\obj\Debug\Tieptuyen.Components.Core.AssetStore.csprojResolveAssemblyReference.cache
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore\obj\Debug\Tieptuyen.Components.Core.AssetStore.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\AssetStore\Tieptuyen.Components.Core.AssetStore\obj\Debug\Tieptuyen.Components.Core.AssetStore.pdb

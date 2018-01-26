@@ -1,0 +1,428 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tieptuyen.Components.Core.AssetStore</name>
+    </assembly>
+    <members>
+        <member name="T:Tieptuyen.Components.Core.AssetStore.Configuration.AssetStoreCollection">
+            <summary>
+            A collection of asset store configuration elements.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.Configuration.AssetStoreCollection.CreateNewElement">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.Configuration.AssetStoreCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.AssetStore.Configuration.AssetStoreConfiguration">
+            <summary>
+            The configuration for the asset stores.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.Configuration.AssetStoreConfiguration.GetConfiguration">
+            <summary>
+            Gets the configuration.
+            </summary>
+            <returns>A <see cref="T:Tieptuyen.Components.Core.AssetStore.Configuration.AssetStoreConfiguration"/> object representing the current configuration.</returns>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.AssetStore.Configuration.AssetStoreConfiguration.Root">
+            <summary>
+            Gets the root.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.AssetStore.Configuration.AssetStoreConfiguration.Stores">
+            <summary>
+            Gets all the current stores.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.AssetStore.Configuration.AssetStoreElement">
+            <summary>
+            Represents a resource asset configuration element.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.AssetStore.Configuration.AssetStoreElement.Alias">
+            <summary>
+            Gets the alias for the asset store.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.AssetStore.Configuration.AssetStoreElement.Type">
+            <summary>
+            Gets the fully-qualified type used for the asset store.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.AssetStore.Configuration.AssetStoreElement.Parameters">
+            <summary>
+            Gets any parameters required when creating the asset store.
+            </summary>
+            <remarks>Parameters are in the form of a semi-colon-separated string where each parameter is in the form of key=value;</remarks>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.AssetStore.DefaultAssetStoreManager">
+            <summary>
+            The default asset store manager.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.AssetStore.IAssetStoreManager">
+            <summary>
+            Defines a asset store manager.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.IAssetStoreManager.RegisterAssetStore(Tieptuyen.Components.Core.AssetStore.IAssetStore)">
+            <summary>
+            Registers a asset store.
+            </summary>
+            <param name="assetStore">The asset store.</param>
+            <exception cref="!:Tieptuyen.Components.Core.ResourceStore.ResourceStoreException">Thrown if an existing resource store has been registered with the same alias.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.IAssetStoreManager.LoadFromConfiguration">
+            <summary>
+            Loads the asset stores from configuration (web.config or app.config).
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.IAssetStoreManager.GetResourceStore(System.String)">
+            <summary>
+            Gets a asset store.
+            </summary>
+            <param name="alias">The alias of the asset store.</param>
+            <returns>An <see cref="T:Tieptuyen.Components.Core.AssetStore.IAssetStore"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.DefaultAssetStoreManager.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.AssetStore.DefaultAssetStoreManager"/> class.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.DefaultAssetStoreManager.RegisterAssetStore(Tieptuyen.Components.Core.AssetStore.IAssetStore)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.DefaultAssetStoreManager.LoadFromConfiguration">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.DefaultAssetStoreManager.GetResourceStore(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.DefaultAssetStoreManager.TryGetMember(System.Dynamic.GetMemberBinder,System.Object@)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreDirectory">
+            <summary>
+            A asset directory which is based on the local file system.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.AssetStore.IAssetStoreDirectory">
+            <summary>
+            Defines a directory in the asset store.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.IAssetStoreDirectory.FileExists(System.String)">
+            <summary>
+            Determines whether a file exists.
+            </summary>
+            <param name="fileName">The name of the file.</param>
+            <returns><c>true</c> if the file exists, otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.IAssetStoreDirectory.GetFile(System.String)">
+            <summary>
+            Gets a file.
+            </summary>
+            <param name="fileName">The name of the file.</param>
+            <returns>An <see cref="T:Tieptuyen.Components.Core.AssetStore.IAssetStoreFile"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.IAssetStoreDirectory.CreateFile(System.String)">
+            <summary>
+            Creates a new file.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+            <returns>The new <see cref="T:Tieptuyen.Components.Core.AssetStore.IAssetStoreFile"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.IAssetStoreDirectory.DeleteFile(System.String)">
+            <summary>
+            Deletes a file.
+            </summary>
+            <param name="fileName">The name of the file.</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.IAssetStoreDirectory.DirectoryExists(System.String)">
+            <summary>
+            Determines whether a directory exists.
+            </summary>
+            <param name="name">The name of the directory.</param>
+            <returns><c>true</c> if the directory exists <c>otherwise</c> false.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.IAssetStoreDirectory.GetDirectory(System.String)">
+            <summary>
+            Gets a directory.
+            </summary>
+            <param name="name">The name of the directory.</param>
+            <returns>An <see cref="T:Tieptuyen.Components.Core.AssetStore.IAssetStoreDirectory"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.IAssetStoreDirectory.CreateDirectory(System.String)">
+            <summary>
+            Creates a directory.
+            </summary>
+            <param name="name">The name of the directory.</param>
+            <returns>The new <see cref="T:Tieptuyen.Components.Core.AssetStore.IAssetStoreDirectory"/>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.IAssetStoreDirectory.DeleteDirectory(System.String)">
+            <summary>
+            Deletes a directory.
+            </summary>
+            <param name="name">The name of the directory.</param>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.AssetStore.IAssetStoreDirectory.Directories">
+            <summary>
+            Gets all sub-directories.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.AssetStore.IAssetStoreDirectory.Files">
+            <summary>
+            Gets all files.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.AssetStore.IAssetStoreDirectory.Name">
+            <summary>
+            Gets the name.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreDirectory.#ctor(System.String,Tieptuyen.Components.Core.AssetStore.FileSystemAssetStore)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreDirectory"/> class.
+            </summary>
+            <param name="virtualPath">The virtual path.</param>
+            <param name="assetStore">The asset store.</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreDirectory.Tieptuyen#Components#Core#AssetStore#IAssetStoreDirectory#FileExists(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreDirectory.Tieptuyen#Components#Core#AssetStore#IAssetStoreDirectory#GetFile(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreDirectory.Tieptuyen#Components#Core#AssetStore#IAssetStoreDirectory#CreateFile(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreDirectory.Tieptuyen#Components#Core#AssetStore#IAssetStoreDirectory#DeleteFile(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreDirectory.Tieptuyen#Components#Core#AssetStore#IAssetStoreDirectory#DirectoryExists(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreDirectory.Tieptuyen#Components#Core#AssetStore#IAssetStoreDirectory#GetDirectory(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreDirectory.Tieptuyen#Components#Core#AssetStore#IAssetStoreDirectory#CreateDirectory(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreDirectory.Tieptuyen#Components#Core#AssetStore#IAssetStoreDirectory#DeleteDirectory(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreDirectory.Children">
+            <inheritdoc/>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreDirectory.Tieptuyen#Components#Core#AssetStore#IAssetStoreDirectory#Directories">
+            <inheritdoc/>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreDirectory.Tieptuyen#Components#Core#AssetStore#IAssetStoreDirectory#Files">
+            <inheritdoc/>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreDirectory.Directories">
+            <inheritdoc/>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreDirectory.Files">
+            <inheritdoc/>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreDirectory.Tieptuyen#Components#Core#AssetStore#IAssetStoreDirectory#Name">
+            <inheritdoc/>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreFile">
+            <summary>
+            A asset file which based on the local file-system.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.AssetStore.IAssetStoreFile">
+            <summary>
+            Defines a file in the asset store.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.IAssetStoreFile.Open">
+            <summary>
+            Opens a writable stream to this file.
+            </summary>
+            <returns>A writable <see cref="T:System.IO.Stream"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.IAssetStoreFile.Open(System.Boolean)">
+            <summary>
+            Opens a stream to this file.
+            </summary>
+            <param name="readOnly">if set to <c>true</c> a read-only stream will be returned.</param>
+            <returns>A <see cref="T:System.IO.Stream"/> object.</returns>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.AssetStore.IAssetStoreFile.FileName">
+            <summary>
+            Gets the name of the file.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreFile.#ctor(System.String,Tieptuyen.Components.Core.AssetStore.FileSystemAssetStore)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreFile"/> class.
+            </summary>
+            <param name="virtualPath">The virtual path.</param>
+            <param name="assetStore">The asset store.</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreFile.Tieptuyen#Components#Core#AssetStore#IAssetStoreFile#Open">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreFile.Tieptuyen#Components#Core#AssetStore#IAssetStoreFile#Open(System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreFile.Open">
+            <inheritdoc/>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStoreFile.Tieptuyen#Components#Core#AssetStore#IAssetStoreFile#FileName">
+            <inheritdoc/>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStore">
+            <summary>
+            A virtual asset store which is based on the local file-system.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.AssetStore.AssetStore">
+            <summary>
+            The base class, from which all asset stores inherit.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.AssetStore.IAssetStore">
+            <summary>
+            Defines a virtual asset store.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.IAssetStore.FileExists(System.String)">
+            <summary>
+            Determines whether a file exists.
+            </summary>
+            <param name="path">The path.</param>
+            <returns><c>true</c> if the file exists, otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.IAssetStore.DirectoryExists(System.String)">
+            <summary>
+            Determines whether a directory exists.
+            </summary>
+            <param name="path">The path.</param>
+            <returns><c>true</c> if the directory exists, otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.IAssetStore.GetFile(System.String)">
+            <summary>
+            Gets the specified file.
+            </summary>
+            <param name="path">The path.</param>
+            <returns>An <see cref="T:Tieptuyen.Components.Core.AssetStore.IAssetStoreFile"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.IAssetStore.GetDirectory(System.String)">
+            <summary>
+            Gets the the directory.
+            </summary>
+            <param name="path">The path.</param>
+            <returns>An <see cref="T:Tieptuyen.Components.Core.AssetStore.IAssetStoreDirectory"/> object.</returns>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.AssetStore.IAssetStore.Alias">
+            <summary>
+            Gets the alias for this asset store.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.AssetStore.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.AssetStore.AssetStore"/> class.
+            </summary>
+            <param name="alias">The alias for the asset store.</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.AssetStore.Tieptuyen#Components#Core#AssetStore#IAssetStore#FileExists(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.AssetStore.Tieptuyen#Components#Core#AssetStore#IAssetStore#DirectoryExists(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.AssetStore.Tieptuyen#Components#Core#AssetStore#IAssetStore#GetFile(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.AssetStore.Tieptuyen#Components#Core#AssetStore#IAssetStore#GetDirectory(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.AssetStore.IsPathVirtual(System.String)">
+            <summary>
+            Determines whether the supplied path is a valid virtual path.
+            </summary>
+            <param name="path">The path.</param>
+            <returns><c>true</c> if <paramref name="path"/> is a valid virtual path, otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.AssetStore.ToFullVirtualPath(System.String)">
+            <summary>
+            Creates a full virtual path from a relative path.
+            </summary>
+            <param name="path">The path.</param>
+            <returns>The full virtual path as a <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.AssetStore.AssetStore.Alias">
+            <summary>
+            Gets the alias for this asset store.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.AssetStore.AssetStore.RootVirtualPath">
+            <summary>
+            Gets the root virtual path.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStore.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStore"/> class.
+            </summary>
+            <param name="alias">The alias.</param>
+            <param name="rootDirectory">The physical root directory of the asset store's location on disk.</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStore.FileExists(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStore.GetFile(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStore.DirectoryExists(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStore.GetDirectory(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.FileSystemAssetStore.GetPhysicalPath(System.String)">
+            <summary>
+            Gets the physical path from a virtual path.
+            </summary>
+            <param name="virtualPath">The virtual path.</param>
+            <returns>A <see cref="T:System.String"/> representing the physical path.</returns>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.AssetStore.AssetStoreException">
+            <summary>
+            An exception which may be thrown when an error occurs with the asset store system.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.AssetStoreException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.AssetStore.AssetStoreException"/> class.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.AssetStoreException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.AssetStore.AssetStoreException"/> class.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.AssetStoreException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.AssetStore.AssetStoreException"/> class.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.AssetStore.AssetStoreException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.AssetStore.AssetStoreException"/> class.
+            </summary>
+            <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo"/> that holds the serialized object data about the exception being thrown.</param>
+            <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext"/> that contains contextual information about the source or destination.</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,9 @@
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess\bin\Release\Tieptuyen.Components.Core.Api.DataAccess.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess\bin\Release\Tieptuyen.Components.Core.Api.DataAccess.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess\bin\Release\Tieptuyen.Components.Core.Api.DataAccess.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess\bin\Release\Dapper.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess\bin\Release\Dapper.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess\bin\Release\Dapper.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess\obj\Release\Tieptuyen.Components.Core.Api.DataAccess.csprojResolveAssemblyReference.cache
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess\obj\Release\Tieptuyen.Components.Core.Api.DataAccess.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess\obj\Release\Tieptuyen.Components.Core.Api.DataAccess.pdb

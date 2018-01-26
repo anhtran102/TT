@@ -1,0 +1,15 @@
+F:\WORK\TIEPTUYEN\Tieptuyen\Configuration\Tieptuyen.Components.Core.Api.Configuration.Default\bin\Release\Tieptuyen.Components.Core.Api.Configuration.Default.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\Configuration\Tieptuyen.Components.Core.Api.Configuration.Default\bin\Release\Tieptuyen.Components.Core.Api.Configuration.Default.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Configuration\Tieptuyen.Components.Core.Api.Configuration.Default\bin\Release\Tieptuyen.Components.Core.Api.Configuration.Default.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\Configuration\Tieptuyen.Components.Core.Api.Configuration.Default\bin\Release\Dapper.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Configuration\Tieptuyen.Components.Core.Api.Configuration.Default\bin\Release\Tieptuyen.Components.Core.Api.Configuration.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Configuration\Tieptuyen.Components.Core.Api.Configuration.Default\bin\Release\Tieptuyen.Components.Core.Api.Util.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Configuration\Tieptuyen.Components.Core.Api.Configuration.Default\bin\Release\Tieptuyen.Components.Core.Api.Util.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\Configuration\Tieptuyen.Components.Core.Api.Configuration.Default\bin\Release\Tieptuyen.Components.Core.Api.Util.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\Configuration\Tieptuyen.Components.Core.Api.Configuration.Default\bin\Release\Tieptuyen.Components.Core.Api.Configuration.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\Configuration\Tieptuyen.Components.Core.Api.Configuration.Default\bin\Release\Tieptuyen.Components.Core.Api.Configuration.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\Configuration\Tieptuyen.Components.Core.Api.Configuration.Default\bin\Release\Dapper.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\Configuration\Tieptuyen.Components.Core.Api.Configuration.Default\bin\Release\Dapper.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\Configuration\Tieptuyen.Components.Core.Api.Configuration.Default\obj\Release\Tieptuyen.Components.Core.Api.Configuration.Default.csprojResolveAssemblyReference.cache
+F:\WORK\TIEPTUYEN\Tieptuyen\Configuration\Tieptuyen.Components.Core.Api.Configuration.Default\obj\Release\Tieptuyen.Components.Core.Api.Configuration.Default.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Configuration\Tieptuyen.Components.Core.Api.Configuration.Default\obj\Release\Tieptuyen.Components.Core.Api.Configuration.Default.pdb

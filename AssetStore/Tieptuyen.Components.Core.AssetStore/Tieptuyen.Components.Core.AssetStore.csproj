@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D11F430-D49F-4263-80DF-30E4B983B03A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tieptuyen.Components.Core.AssetStore</RootNamespace>
+    <AssemblyName>Tieptuyen.Components.Core.AssetStore</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Tieptuyen.Components.Core.AssetStore.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Major>$(MAJOR_VERSION)</Major>
+    <Minor>$(MINOR_VERSION)</Minor>
+    <Build>$(BUILD_VERSION)</Build>
+    <Revision>$(BUILD_NUMBER)</Revision>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StyleCopOutputFile>$(SolutionDir)\Tieptuyen.Components.Core.AssetStore.StyleCopViolations.xml</StyleCopOutputFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\AssetStoreCollection.cs" />
+    <Compile Include="Configuration\AssetStoreConfiguration.cs" />
+    <Compile Include="Configuration\AssetStoreElement.cs" />
+    <Compile Include="DefaultAssetStoreManager.cs" />
+    <Compile Include="FileSystemAssetStoreDirectory.cs" />
+    <Compile Include="FileSystemAssetStoreFile.cs" />
+    <Compile Include="FileSystemAssetStore.cs" />
+    <Compile Include="IAssetStoreDirectory.cs" />
+    <Compile Include="IAssetStoreFile.cs" />
+    <Compile Include="IAssetStore.cs" />
+    <Compile Include="IAssetStoreManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Version.cs" />
+    <Compile Include="AssetStore.cs" />
+    <Compile Include="AssetStoreException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Util\Tieptuyen.Components.Core.Api.Util\Tieptuyen.Components.Core.Api.Util.csproj">
+      <Project>{902B82A9-329B-4E14-BCE3-8F23B51F9205}</Project>
+      <Name>Tieptuyen.Components.Core.Api.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />  
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Project="$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets" Condition="Exists('$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets')" />
+  <Target Name="BeforeBuild" Condition="Exists('$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets')">
+    <Message Text="Version: $(Major).$(Minor).$(Build).$(Revision)" />
+    <AssemblyInfo CodeLanguage="CS" OutputFile="Properties\Version.cs" AssemblyVersion="$(Major).$(Minor).$(Build).$(Revision)" AssemblyFileVersion="$(Major).$(Minor).$(Build).$(Revision)" Condition="$(Revision) != '' " />
+  </Target>
+</Project>

@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tieptuyen.Components.Core.Api.Configuration</name>
+    </assembly>
+    <members>
+        <member name="T:Tieptuyen.Components.Core.Api.Configuration.ValueType">
+            <summary>
+            Represents the data type of a configuration value.
+            </summary>
+        </member>
+        <member name="F:Tieptuyen.Components.Core.Api.Configuration.ValueType.Boolean">
+            <summary>
+            Specifies a boolean value.
+            </summary>
+        </member>
+        <member name="F:Tieptuyen.Components.Core.Api.Configuration.ValueType.Integer">
+            <summary>
+            Specifies a integer value.
+            </summary>
+        </member>
+        <member name="F:Tieptuyen.Components.Core.Api.Configuration.ValueType.Float">
+            <summary>
+            Specifies a float value.
+            </summary>
+        </member>
+        <member name="F:Tieptuyen.Components.Core.Api.Configuration.ValueType.Date">
+            <summary>
+            Specifies a date value.
+            </summary>
+        </member>
+        <member name="F:Tieptuyen.Components.Core.Api.Configuration.ValueType.DateTime">
+            <summary>
+            Specifies a date/time value.
+            </summary>
+        </member>
+        <member name="F:Tieptuyen.Components.Core.Api.Configuration.ValueType.String">
+            <summary>
+            Specifies a string value.
+            </summary>
+        </member>
+        <member name="F:Tieptuyen.Components.Core.Api.Configuration.ValueType.Xml">
+            <summary>
+            Specifies an XML value.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.Configuration.IConfigurationManager">
+            <summary>
+            A manager for handling configuration values in the system.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Configuration.IConfigurationManager.GetAllValues">
+            <summary>
+            Gets all configuration values.
+            </summary>
+            <returns>A dictionary containing all the current configuration values.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Configuration.IConfigurationManager.GetValue(System.String)">
+            <summary>
+            Gets a configuration value.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>The configuration value stored against the specified key.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="key"/> is either <c>null</c> or empty.</exception>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Thrown if the value specified by <paramref name="key"/> does not exist.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Configuration.IConfigurationManager.GetValues(System.String[])">
+            <summary>
+            Gets a subset of values.
+            </summary>
+            <param name="keys">The keys.</param>
+            <returns>A dictionary containing the configuration values.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Configuration.IConfigurationManager.SetValue(System.String,System.Object,Tieptuyen.Components.Core.Api.Configuration.ValueType)">
+            <summary>
+            Sets a configuration value.
+            </summary>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+            <param name="type">The type.</param>
+        </member>
+    </members>
+</doc>

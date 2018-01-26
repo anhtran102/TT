@@ -1,0 +1,6 @@
+F:\WORK\TIEPTUYEN\Tieptuyen\ObjectModel\Tieptuyen.Components.Core.Api.ObjectModel\bin\Debug\Tieptuyen.Components.Core.Api.ObjectModel.XML
+F:\WORK\TIEPTUYEN\Tieptuyen\ObjectModel\Tieptuyen.Components.Core.Api.ObjectModel\bin\Debug\Tieptuyen.Components.Core.Api.ObjectModel.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\ObjectModel\Tieptuyen.Components.Core.Api.ObjectModel\bin\Debug\Tieptuyen.Components.Core.Api.ObjectModel.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\ObjectModel\Tieptuyen.Components.Core.Api.ObjectModel\obj\Debug\Tieptuyen.Components.Core.Api.ObjectModel.csprojResolveAssemblyReference.cache
+F:\WORK\TIEPTUYEN\Tieptuyen\ObjectModel\Tieptuyen.Components.Core.Api.ObjectModel\obj\Debug\Tieptuyen.Components.Core.Api.ObjectModel.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\ObjectModel\Tieptuyen.Components.Core.Api.ObjectModel\obj\Debug\Tieptuyen.Components.Core.Api.ObjectModel.pdb

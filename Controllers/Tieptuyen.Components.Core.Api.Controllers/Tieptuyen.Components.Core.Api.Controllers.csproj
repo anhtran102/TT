@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D69B8FF-8B0A-4A47-9171-7EF5477900F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tieptuyen.Components.Core.Api.Controllers</RootNamespace>
+    <AssemblyName>Tieptuyen.Components.Core.Api.Controllers</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Tieptuyen.Components.Core.Api.Controllers.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Tieptuyen.Components.Core.Api.Controllers.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Major>$(MAJOR_VERSION)</Major>
+    <Minor>$(MINOR_VERSION)</Minor>
+    <Build>$(BUILD_VERSION)</Build>
+    <Revision>$(BUILD_NUMBER)</Revision>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StyleCopOutputFile>$(SolutionDir)\Tieptuyen.Components.Core.Api.Controllers.StyleCopViolations.xml</StyleCopOutputFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessControlController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Version.cs" />
+    <Compile Include="SystemItemController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusinessObjects\Tieptuyen.Components.Core.Api.BusinessObjects\Tieptuyen.Components.Core.Api.BusinessObjects.csproj">
+      <Project>{e37a3d96-d018-41de-9d0b-02d66c6a49c4}</Project>
+      <Name>Tieptuyen.Components.Core.Api.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Configuration\Tieptuyen.Components.Core.Api.Configuration\Tieptuyen.Components.Core.Api.Configuration.csproj">
+      <Project>{b91fcf4a-1c7a-4eab-ae21-c157b7a25c7d}</Project>
+      <Name>Tieptuyen.Components.Core.Api.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ObjectModel\Tieptuyen.Components.Core.Api.ObjectModel\Tieptuyen.Components.Core.Api.ObjectModel.csproj">
+      <Project>{2a28dca5-31ba-402a-8bad-ff7b7b2bf4e1}</Project>
+      <Name>Tieptuyen.Components.Core.Api.ObjectModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\Tieptuyen.Components.Core.Api.Services\Tieptuyen.Components.Core.Api.Services.csproj">
+      <Project>{8610609C-F065-4412-B757-C4320B8E38CC}</Project>
+      <Name>Tieptuyen.Components.Core.Api.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Util\Tieptuyen.Components.Core.Api.Util.Http\Tieptuyen.Components.Core.Api.Util.Http.csproj">
+      <Project>{9a0e7926-3239-4644-bc3a-f980ab124064}</Project>
+      <Name>Tieptuyen.Components.Core.Api.Util.Http</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Util\Tieptuyen.Components.Core.Api.Util\Tieptuyen.Components.Core.Api.Util.csproj">
+      <Project>{902b82a9-329b-4e14-bce3-8f23b51f9205}</Project>
+      <Name>Tieptuyen.Components.Core.Api.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Project="$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets" Condition="Exists('$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets')" />
+  <Target Name="BeforeBuild" Condition="Exists('$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets')">
+    <Message Text="Version: $(Major).$(Minor).$(Build).$(Revision)" />
+    <AssemblyInfo CodeLanguage="CS" OutputFile="Properties\Version.cs" AssemblyVersion="$(Major).$(Minor).$(Build).$(Revision)" AssemblyFileVersion="$(Major).$(Minor).$(Build).$(Revision)" Condition="$(Revision) != '' " />
+  </Target>
+</Project>

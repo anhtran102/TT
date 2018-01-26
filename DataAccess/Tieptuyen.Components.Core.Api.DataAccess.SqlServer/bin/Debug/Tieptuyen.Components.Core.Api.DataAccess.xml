@@ -1,0 +1,549 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tieptuyen.Components.Core.Api.DataAccess</name>
+    </assembly>
+    <members>
+        <member name="T:Tieptuyen.Components.Core.Api.DataAccess.GridReader">
+            <summary>
+            A data grid reader.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.DataAccess.IGridReader">
+            <summary>
+            Defines a grid reader.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IGridReader.Read``1(System.Boolean)">
+            <summary>
+            Reads from the grid reader.
+            </summary>
+            <typeparam name="T">The type of object to return.</typeparam>
+            <param name="buffered">Set to <c>true</c> to perform a buffered read.</param>
+            <returns>The results as an <see cref="T:System.Collections.Generic.IEnumerable`1"/>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IGridReader.Read(System.Boolean)">
+            <summary>
+            Reads from the grid reader.
+            </summary>
+            <param name="buffered">Set to <c>true</c> to perform a buffered read.</param>
+            <returns>The results as an <see cref="T:System.Collections.Generic.IEnumerable`1"/>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IGridReader.Read``3(System.Func{``0,``1,``2},System.String,System.Boolean)">
+            <summary>
+            Reads from the grid reader.
+            </summary>
+            <typeparam name="TFirst">The type of the first object.</typeparam>
+            <typeparam name="TSecond">The type of the second object.</typeparam>
+            <typeparam name="TReturn">The type of the return object.</typeparam>
+            <param name="func">The mapper function.</param>
+            <param name="splitOn">The column to split on.</param>
+            <param name="buffered">Set to <c>true</c> to perform a buffered read.</param>
+            <returns>The results as an <see cref="T:System.Collections.Generic.IEnumerable`1"/>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IGridReader.Read``6(System.Func{``0,``1,``2,``3,``4,``5},System.String,System.Boolean)">
+            <summary>
+            Reads from the grid reader.
+            </summary>
+            <typeparam name="TFirst">The type of the first object.</typeparam>
+            <typeparam name="TSecond">The type of the second object.</typeparam>
+            <typeparam name="TThird">The type of the third object.</typeparam>
+            <typeparam name="TFourth">The type of the fourth object.</typeparam>
+            <typeparam name="TFifth">The type of the fifth object.</typeparam>
+            <typeparam name="TReturn">The type of the return object.</typeparam>
+            <param name="func">The mapper function.</param>
+            <param name="splitOn">The column to split on.</param>
+            <param name="buffered">Set to <c>true</c> to perform a buffered read.</param>
+            <returns>The results as an <see cref="T:System.Collections.Generic.IEnumerable`1"/>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IGridReader.Read``7(System.Func{``0,``1,``2,``3,``4,``5,``6},System.String,System.Boolean)">
+            <summary>
+            Reads from the grid reader.
+            </summary>
+            <typeparam name="TFirst">The type of the first object.</typeparam>
+            <typeparam name="TSecond">The type of the second object.</typeparam>
+            <typeparam name="TThird">The type of the third object.</typeparam>
+            <typeparam name="TFourth">The type of the fourth object.</typeparam>
+            <typeparam name="TFifth">The type of the fifth object.</typeparam>
+            <typeparam name="TSixth">The type of the sixth object.</typeparam>
+            <typeparam name="TReturn">The type of the return object.</typeparam>
+            <param name="func">The mapper function.</param>
+            <param name="splitOn">The column to split on.</param>
+            <param name="buffered">Set to <c>true</c> to perform a buffered read.</param>
+            <returns>The results as an <see cref="T:System.Collections.Generic.IEnumerable`1"/>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IGridReader.Read``8(System.Func{``0,``1,``2,``3,``4,``5,``6,``7},System.String,System.Boolean)">
+            <summary>
+            Reads from the grid reader.
+            </summary>
+            <typeparam name="TFirst">The type of the first object.</typeparam>
+            <typeparam name="TSecond">The type of the second object.</typeparam>
+            <typeparam name="TThird">The type of the third object.</typeparam>
+            <typeparam name="TFourth">The type of the fourth object.</typeparam>
+            <typeparam name="TFifth">The type of the fifth object.</typeparam>
+            <typeparam name="TSixth">The type of the sixth object.</typeparam>
+            <typeparam name="TSeventh">The type of the seventh object.</typeparam>
+            <typeparam name="TReturn">The type of the return object.</typeparam>
+            <param name="func">The mapper function.</param>
+            <param name="splitOn">The column to split on.</param>
+            <param name="buffered">Set to <c>true</c> to perform a buffered read.</param>
+            <returns>The results as an <see cref="T:System.Collections.Generic.IEnumerable`1"/>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IGridReader.Read``5(System.Func{``0,``1,``2,``3,``4},System.String,System.Boolean)">
+            <summary>
+            Reads from the grid reader.
+            </summary>
+            <typeparam name="TFirst">The type of the first object.</typeparam>
+            <typeparam name="TSecond">The type of the second object.</typeparam>
+            <typeparam name="TThird">The type of the third object.</typeparam>
+            <typeparam name="TFourth">The type of the fourth object.</typeparam>
+            <typeparam name="TReturn">The type of the return object.</typeparam>
+            <param name="func">The mapper function.</param>
+            <param name="splitOn">The column to split on.</param>
+            <param name="buffered">Set to <c>true</c> to perform a buffered read.</param>
+            <returns>The results as an <see cref="T:System.Collections.Generic.IEnumerable`1"/>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IGridReader.Read``4(System.Func{``0,``1,``2,``3},System.String,System.Boolean)">
+            <summary>
+            Reads from the grid reader.
+            </summary>
+            <typeparam name="TFirst">The type of the first object.</typeparam>
+            <typeparam name="TSecond">The type of the second object.</typeparam>
+            <typeparam name="TThird">The type of the third object.</typeparam>
+            <typeparam name="TReturn">The type of the return object.</typeparam>
+            <param name="func">The mapper function.</param>
+            <param name="splitOn">The column to split on.</param>
+            <param name="buffered">Set to <c>true</c> to perform a buffered read.</param>
+            <returns>The results as an <see cref="T:System.Collections.Generic.IEnumerable`1"/>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.GridReader.#ctor(Dapper.SqlMapper.GridReader)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.Api.DataAccess.GridReader"/> class.
+            </summary>
+            <param name="dapperGridReader">The dapper grid reader.</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.GridReader.Finalize">
+            <summary>
+            Finalizes an instance of the <see cref="T:Tieptuyen.Components.Core.Api.DataAccess.GridReader"/> class.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.GridReader.Read``1(System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.GridReader.Read(System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.GridReader.Read``3(System.Func{``0,``1,``2},System.String,System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.GridReader.Read``6(System.Func{``0,``1,``2,``3,``4,``5},System.String,System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.GridReader.Read``7(System.Func{``0,``1,``2,``3,``4,``5,``6},System.String,System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.GridReader.Read``8(System.Func{``0,``1,``2,``3,``4,``5,``6,``7},System.String,System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.GridReader.Read``5(System.Func{``0,``1,``2,``3,``4},System.String,System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.GridReader.Read``4(System.Func{``0,``1,``2,``3},System.String,System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.GridReader.Dispose">
+            <inheritdoc/>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.DataAccess.IRepository">
+            <summary>
+            Represents a data-access repository.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IRepository.BeginWork">
+            <summary>
+            Begins an atomic unit of work.
+            </summary>
+            <returns>An <see cref="T:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork"/> object.</returns>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork">
+            <summary>
+            Represents an atomic unit of work to perform data access functionality.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork.Commit">
+            <summary>
+            Commits the unit of work to the repository.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork.Rollback">
+            <summary>
+            Rollbacks the unit of work.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork.Query(System.String,System.Object,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            Runs a query as part of the specified unit of work.
+            </summary>
+            <param name="sql">The SQL.</param>
+            <param name="parameters">The parameters.</param>
+            <param name="buffered">Set to <c>true</c> to buffer the query.</param>
+            <param name="commandTimeout">The command timeout.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork.Query``1(System.String,System.Object,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            Runs a query as part of the specified unit of work.
+            </summary>
+            <typeparam name="T">The type of object to return</typeparam>
+            <param name="sql">The SQL.</param>
+            <param name="parameters">The parameters.</param>
+            <param name="buffered">Set to <c>true</c> to buffer the query.</param>
+            <param name="commandTimeout">The command timeout.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork.Query``3(System.String,System.Func{``0,``1,``2},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            Runs a query as part of the specified unit of work.
+            </summary>
+            <typeparam name="TFirst">The type of the first object.</typeparam>
+            <typeparam name="TSecond">The type of the second object.</typeparam>
+            <typeparam name="TReturn">The type of the return object.</typeparam>
+            <param name="sql">The SQL.</param>
+            <param name="map">The map.</param>
+            <param name="parameters">The parameters.</param>
+            <param name="buffered">Set to <c>true</c> to buffer the query.</param>
+            <param name="splitOn">The column to split on.</param>
+            <param name="commandTimeout">The command timeout.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork.Query``4(System.String,System.Func{``0,``1,``2,``3},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            Runs a query as part of the specified unit of work.
+            </summary>
+            <typeparam name="TFirst">The type of the first object.</typeparam>
+            <typeparam name="TSecond">The type of the second object.</typeparam>
+            <typeparam name="TThird">The type of the third object.</typeparam>
+            <typeparam name="TReturn">The type of the return object.</typeparam>
+            <param name="sql">The SQL.</param>
+            <param name="map">The map.</param>
+            <param name="parameters">The parameters.</param>
+            <param name="buffered">Set to <c>true</c> to buffer the query.</param>
+            <param name="splitOn">The column to split on.</param>
+            <param name="commandTimeout">The command timeout.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork.Query``5(System.String,System.Func{``0,``1,``2,``3,``4},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            Runs a query as part of the specified unit of work.
+            </summary>
+            <typeparam name="TFirst">The type of the first object.</typeparam>
+            <typeparam name="TSecond">The type of the second object.</typeparam>
+            <typeparam name="TThird">The type of the third object.</typeparam>
+            <typeparam name="TFourth">The type of the fourth object.</typeparam>
+            <typeparam name="TReturn">The type of the return object.</typeparam>
+            <param name="sql">The SQL.</param>
+            <param name="map">The map.</param>
+            <param name="parameters">The parameters.</param>
+            <param name="buffered">Set to <c>true</c> to buffer the query.</param>
+            <param name="splitOn">The column to split on.</param>
+            <param name="commandTimeout">The command timeout.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork.Query``6(System.String,System.Func{``0,``1,``2,``3,``4,``5},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            Runs a query as part of the specified unit of work.
+            </summary>
+            <typeparam name="TFirst">The type of the first object.</typeparam>
+            <typeparam name="TSecond">The type of the second object.</typeparam>
+            <typeparam name="TThird">The type of the third object.</typeparam>
+            <typeparam name="TFourth">The type of the fourth object.</typeparam>
+            <typeparam name="TFifth">The type of the fifth object.</typeparam>
+            <typeparam name="TReturn">The type of the return object.</typeparam>
+            <param name="sql">The SQL.</param>
+            <param name="map">The map.</param>
+            <param name="parameters">The parameters.</param>
+            <param name="buffered">Set to <c>true</c> to buffer the query.</param>
+            <param name="splitOn">The column to split on.</param>
+            <param name="commandTimeout">The command timeout.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork.Query``7(System.String,System.Func{``0,``1,``2,``3,``4,``5,``6},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            Runs a query as part of the specified unit of work.
+            </summary>
+            <typeparam name="TFirst">The type of the first object.</typeparam>
+            <typeparam name="TSecond">The type of the second object.</typeparam>
+            <typeparam name="TThird">The type of the third object.</typeparam>
+            <typeparam name="TFourth">The type of the fourth object.</typeparam>
+            <typeparam name="TFifth">The type of the fifth object.</typeparam>
+            <typeparam name="TSixth">The type of the sixth object.</typeparam>
+            <typeparam name="TReturn">The type of the return object.</typeparam>
+            <param name="sql">The SQL.</param>
+            <param name="map">The map.</param>
+            <param name="parameters">The parameters.</param>
+            <param name="buffered">Set to <c>true</c> to buffer the query.</param>
+            <param name="splitOn">The column to split on.</param>
+            <param name="commandTimeout">The command timeout.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>
+            An <see cref="T:System.Collections.Generic.IEnumerable`1"/> object.
+            </returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork.Query``8(System.String,System.Func{``0,``1,``2,``3,``4,``5,``6,``7},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            Runs a query as part of the specified unit of work.
+            </summary>
+            <typeparam name="TFirst">The type of the first object.</typeparam>
+            <typeparam name="TSecond">The type of the second object.</typeparam>
+            <typeparam name="TThird">The type of the third object.</typeparam>
+            <typeparam name="TFourth">The type of the fourth object.</typeparam>
+            <typeparam name="TFifth">The type of the fifth object.</typeparam>
+            <typeparam name="TSixth">The type of the sixth object.</typeparam>
+            <typeparam name="TSeventh">The type of the seventh object.</typeparam>
+            <typeparam name="TReturn">The type of the return object.</typeparam>
+            <param name="sql">The SQL.</param>
+            <param name="map">The map.</param>
+            <param name="parameters">The parameters.</param>
+            <param name="buffered">Set to <c>true</c> to buffer the query.</param>
+            <param name="splitOn">The column to split on.</param>
+            <param name="commandTimeout">The command timeout.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork.QueryAsAsync``1(System.String,System.Object,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            Asynchronously runs a query as part of the specified unit of work.
+            </summary>
+            <typeparam name="T">The type of object to return.</typeparam>
+            <param name="sql">The SQL.</param>
+            <param name="parameters">The parameters.</param>
+            <param name="commandTimeout">The command timeout.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A <see cref="!:System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;T&gt;&gt;"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork.QueryAsAsync``3(System.String,System.Func{``0,``1,``2},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            Asynchronously runs a query as part of the specified unit of work.
+            </summary>
+            <typeparam name="TFirst">The type of the first object.</typeparam>
+            <typeparam name="TSecond">The type of the second object.</typeparam>
+            <typeparam name="TReturn">The type of the return object.</typeparam>
+            <param name="sql">The SQL.</param>
+            <param name="map">The map.</param>
+            <param name="parameters">The parameters.</param>
+            <param name="buffered">Set to <c>true</c> to buffer the query.</param>
+            <param name="splitOn">The column to split on.</param>
+            <param name="commandTimeout">The command timeout.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A <see cref="!:Task&lt;IEnumerable&lt;TReturn&gt;&gt;"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork.QueryAsAsync``4(System.String,System.Func{``0,``1,``2,``3},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            Asynchronously runs a query as part of the specified unit of work.
+            </summary>
+            <typeparam name="TFirst">The type of the first object.</typeparam>
+            <typeparam name="TSecond">The type of the second object.</typeparam>
+            <typeparam name="TThird">The type of the third object.</typeparam>
+            <typeparam name="TReturn">The type of the return object.</typeparam>
+            <param name="sql">The SQL.</param>
+            <param name="map">The map.</param>
+            <param name="parameters">The parameters.</param>
+            <param name="buffered">Set to <c>true</c> to buffer the query.</param>
+            <param name="splitOn">The column to split on.</param>
+            <param name="commandTimeout">The command timeout.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A <see cref="!:Task&lt;IEnumerable&lt;TReturn&gt;&gt;"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork.QueryAsAsync``5(System.String,System.Func{``0,``1,``2,``3,``4},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            Asynchronously runs a query as part of the specified unit of work.
+            </summary>
+            <typeparam name="TFirst">The type of the first object.</typeparam>
+            <typeparam name="TSecond">The type of the second object.</typeparam>
+            <typeparam name="TThird">The type of the third object.</typeparam>
+            <typeparam name="TFourth">The type of the fourth object.</typeparam>
+            <typeparam name="TReturn">The type of the return object.</typeparam>
+            <param name="sql">The SQL.</param>
+            <param name="map">The map.</param>
+            <param name="parameters">The parameters.</param>
+            <param name="buffered">Set to <c>true</c> to buffer the query.</param>
+            <param name="splitOn">The column to split on.</param>
+            <param name="commandTimeout">The command timeout.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A <see cref="!:Task&lt;IEnumerable&lt;TReturn&gt;&gt;"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork.QueryAsAsync``6(System.String,System.Func{``0,``1,``2,``3,``4,``5},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            Asynchronously runs a query as part of the specified unit of work.
+            </summary>
+            <typeparam name="TFirst">The type of the first object.</typeparam>
+            <typeparam name="TSecond">The type of the second object.</typeparam>
+            <typeparam name="TThird">The type of the third object.</typeparam>
+            <typeparam name="TFourth">The type of the fourth object.</typeparam>
+            <typeparam name="TFifth">The type of the fifth object.</typeparam>
+            <typeparam name="TReturn">The type of the return object.</typeparam>
+            <param name="sql">The SQL.</param>
+            <param name="map">The map.</param>
+            <param name="parameters">The parameters.</param>
+            <param name="buffered">Set to <c>true</c> to buffer the query.</param>
+            <param name="splitOn">The column to split on.</param>
+            <param name="commandTimeout">The command timeout.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A <see cref="!:Task&lt;IEnumerable&lt;TReturn&gt;&gt;"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork.QueryAsAsync``7(System.String,System.Func{``0,``1,``2,``3,``4,``5,``6},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            Asynchronously runs a query as part of the specified unit of work.
+            </summary>
+            <typeparam name="TFirst">The type of the first object.</typeparam>
+            <typeparam name="TSecond">The type of the second object.</typeparam>
+            <typeparam name="TThird">The type of the third object.</typeparam>
+            <typeparam name="TFourth">The type of the fourth object.</typeparam>
+            <typeparam name="TFifth">The type of the fifth object.</typeparam>
+            <typeparam name="TSixth">The type of the sixth object.</typeparam>
+            <typeparam name="TReturn">The type of the return object.</typeparam>
+            <param name="sql">The SQL.</param>
+            <param name="map">The map.</param>
+            <param name="parameters">The parameters.</param>
+            <param name="buffered">Set to <c>true</c> to buffer the query.</param>
+            <param name="splitOn">The column to split on.</param>
+            <param name="commandTimeout">The command timeout.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A <see cref="!:Task&lt;IEnumerable&lt;TReturn&gt;&gt;"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork.QueryAsAsync``8(System.String,System.Func{``0,``1,``2,``3,``4,``5,``6,``7},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            Asynchronously runs a query as part of the specified unit of work.
+            </summary>
+            <typeparam name="TFirst">The type of the first object.</typeparam>
+            <typeparam name="TSecond">The type of the second object.</typeparam>
+            <typeparam name="TThird">The type of the third object.</typeparam>
+            <typeparam name="TFourth">The type of the fourth object.</typeparam>
+            <typeparam name="TFifth">The type of the fifth object.</typeparam>
+            <typeparam name="TSixth">The type of the sixth object.</typeparam>
+            <typeparam name="TSeventh">The type of the seventh object.</typeparam>
+            <typeparam name="TReturn">The type of the return object.</typeparam>
+            <param name="sql">The SQL.</param>
+            <param name="map">The map.</param>
+            <param name="parameters">The parameters.</param>
+            <param name="buffered">Set to <c>true</c> to buffer the query.</param>
+            <param name="splitOn">The column to split on.</param>
+            <param name="commandTimeout">The command timeout.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>A <see cref="!:Task&lt;IEnumerable&lt;TReturn&gt;&gt;"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork.QueryMultiple(System.String,System.Object,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            Runs a query as part of the specified unit of work, which returns multiple result sets.
+            </summary>
+            <param name="sql">The SQL.</param>
+            <param name="parameters">The parameters.</param>
+            <param name="commandTimeout">The command timeout.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>An <see cref="T:Tieptuyen.Components.Core.Api.DataAccess.IGridReader"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork.Execute(System.String,System.Object,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <summary>
+            Executes a SQL statement as part of the specified unit of work.
+            </summary>
+            <param name="sql">The SQL.</param>
+            <param name="parameters">The parameters.</param>
+            <param name="commandTimeOut">The command time out.</param>
+            <param name="commandType">Type of the command.</param>
+            <returns>The number of rows affected, as an <see cref="T:System.Int32"/>.</returns>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork.Transaction">
+            <summary>
+            Gets the transaction.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork.Connection">
+            <summary>
+            Gets the connection.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork">
+            <summary>
+            A base class for creating unit of work objects.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.Commit">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.Rollback">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.Dispose">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.Query(System.String,System.Object,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.Query``1(System.String,System.Object,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.Query``3(System.String,System.Func{``0,``1,``2},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.Query``4(System.String,System.Func{``0,``1,``2,``3},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.Query``5(System.String,System.Func{``0,``1,``2,``3,``4},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.Query``6(System.String,System.Func{``0,``1,``2,``3,``4,``5},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.Query``7(System.String,System.Func{``0,``1,``2,``3,``4,``5,``6},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.Query``8(System.String,System.Func{``0,``1,``2,``3,``4,``5,``6,``7},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.QueryAsAsync``1(System.String,System.Object,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.QueryAsAsync``3(System.String,System.Func{``0,``1,``2},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.QueryAsAsync``4(System.String,System.Func{``0,``1,``2,``3},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.QueryAsAsync``5(System.String,System.Func{``0,``1,``2,``3,``4},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.QueryAsAsync``6(System.String,System.Func{``0,``1,``2,``3,``4,``5},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.QueryAsAsync``7(System.String,System.Func{``0,``1,``2,``3,``4,``5,``6},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.QueryAsAsync``8(System.String,System.Func{``0,``1,``2,``3,``4,``5,``6,``7},System.Object,System.Boolean,System.String,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.QueryMultiple(System.String,System.Object,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.Execute(System.String,System.Object,System.Nullable{System.Int32},System.Nullable{System.Data.CommandType})">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.Transaction">
+            <inheritdoc/>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.DataAccess.UnitOfWork.Connection">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>

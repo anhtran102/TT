@@ -1,0 +1,6 @@
+F:\WORK\TIEPTUYEN\Tieptuyen\Configuration\Tieptuyen.Components.Core.Api.Configuration\bin\Release\Tieptuyen.Components.Core.Api.Configuration.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\Configuration\Tieptuyen.Components.Core.Api.Configuration\bin\Release\Tieptuyen.Components.Core.Api.Configuration.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Configuration\Tieptuyen.Components.Core.Api.Configuration\bin\Release\Tieptuyen.Components.Core.Api.Configuration.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\Configuration\Tieptuyen.Components.Core.Api.Configuration\obj\Release\Tieptuyen.Components.Core.Api.Configuration.csprojResolveAssemblyReference.cache
+F:\WORK\TIEPTUYEN\Tieptuyen\Configuration\Tieptuyen.Components.Core.Api.Configuration\obj\Release\Tieptuyen.Components.Core.Api.Configuration.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\Configuration\Tieptuyen.Components.Core.Api.Configuration\obj\Release\Tieptuyen.Components.Core.Api.Configuration.pdb

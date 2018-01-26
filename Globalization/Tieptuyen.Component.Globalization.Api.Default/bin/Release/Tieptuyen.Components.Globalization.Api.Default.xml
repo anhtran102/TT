@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tieptuyen.Components.Globalization.Api.Default</name>
+    </assembly>
+    <members>
+        <member name="T:Tieptuyen.Components.Globalization.Api.Default.LanguageManager">
+            <summary>
+            The default language manager.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Globalization.Api.Default.LanguageManager.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Globalization.Api.Default.LanguageManager"/> class.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Globalization.Api.Default.LanguageManager.#ctor(System.Resources.ResourceManager,System.Resources.ResourceSet)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Globalization.Api.Default.LanguageManager"/> class.
+            </summary>
+            <param name="resourceManager">The resource manager.</param>
+            <param name="supportedLanguages">The supported languages.</param>
+            <remarks>This constructor is primarily for unit-testing purposes.  When constructing instance of the <see cref="T:Tieptuyen.Components.Globalization.Api.Default.LanguageManager"/> class, use the default constructor.</remarks>
+        </member>
+        <member name="M:Tieptuyen.Components.Globalization.Api.Default.LanguageManager.Finalize">
+            <summary>
+            Finalizes an instance of the <see cref="T:Tieptuyen.Components.Globalization.Api.Default.LanguageManager"/> class.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Globalization.Api.Default.LanguageManager.GetSupportedLanguages">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Globalization.Api.Default.LanguageManager.GetAllTranslations(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Globalization.Api.Default.LanguageManager.GetText(System.String,System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Globalization.Api.Default.LanguageManager.GetText(System.String,System.String,System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Globalization.Api.Default.LanguageManager.TryInvokeMember(System.Dynamic.InvokeMemberBinder,System.Object[],System.Object@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Globalization.Api.Default.LanguageManager.Dispose">
+            <inheritdoc/>
+        </member>
+        <member name="M:Tieptuyen.Components.Globalization.Api.Default.LanguageManager.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+    </members>
+</doc>

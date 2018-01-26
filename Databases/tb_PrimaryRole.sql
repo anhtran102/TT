@@ -1,0 +1,35 @@
+
+/****** Object:  Table [cmn].[PrimaryRole]    Script Date: 4/7/2016 9:14:37 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [cmn].[PrimaryRole](
+	[PrimaryRoleID] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](50) NOT NULL,
+	[TranslationID] cmn.[TranslationID] NOT NULL,
+	[Created] [datetime2](7) NOT NULL,
+ CONSTRAINT [PK_PrimaryRole] PRIMARY KEY CLUSTERED 
+(
+	[PrimaryRoleID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY],
+ CONSTRAINT [AK_PrimaryRole_Name] UNIQUE NONCLUSTERED 
+(
+	[Name] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING ON
+GO
+
+ALTER TABLE cmn.[PrimaryRole] ADD  CONSTRAINT [DF_PrimaryRole_Created]  DEFAULT (sysdatetimeoffset()) FOR [Created]
+GO
+
+

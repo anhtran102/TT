@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tieptuyen.Components.Globalization.Api.Controllers</name>
+    </assembly>
+    <members>
+        <member name="T:Tieptuyen.Components.Globalization.Api.Controllers.LanguageController">
+            <summary>
+            A controller for delivering language functionality.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Globalization.Api.Controllers.LanguageController.#ctor(Tieptuyen.Components.Globalization.Api.ILanguageManager)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Globalization.Api.Controllers.LanguageController"/> class.
+            </summary>
+            <param name="languageManager">The language manager.</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Globalization.Api.Controllers.LanguageController.GetSupportedLanguages">
+            <summary>
+            Gets an array of the currently-supported languages.
+            </summary>
+            <returns>An array of <see cref="T:Tieptuyen.Components.Globalization.Api.Language"/> objects.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Globalization.Api.Controllers.LanguageController.GetAllTranslations(System.String)">
+            <summary>
+            Gets all the translations for the specified language.
+            </summary>
+            <param name="languageId">The language ID.</param>
+            <returns>A Dictionary of all the translations against their IDs</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Globalization.Api.Controllers.LanguageController.GetTranslatedText(System.String,System.String)">
+            <summary>
+            Gets an item translated text.
+            </summary>
+            <param name="translationId">The translation ID.</param>
+            <param name="languageId">The language ID.</param>
+            <returns>The translated text as a <see cref="T:System.String"/>; or an empty string if no translation exist.</returns>
+        </member>
+    </members>
+</doc>

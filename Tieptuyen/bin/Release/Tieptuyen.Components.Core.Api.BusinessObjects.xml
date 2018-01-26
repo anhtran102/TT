@@ -1,0 +1,1109 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tieptuyen.Components.Core.Api.BusinessObjects</name>
+    </assembly>
+    <members>
+        <member name="T:Tieptuyen.Components.Core.Api.BusinessObjects.AreaSite">
+            <summary>
+            Class to get identifiers of sites in an area what kind of site they are
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.AreaSite.SiteId">
+            <summary>
+            Gets or sets the SiteId
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.AreaSite.IsOwnSite">
+            <summary>
+            Gets or sets a value indicating whether this is an own site
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.AreaSite.OwnSiteId">
+            <summary>
+            Gets or sets the OwnSiteId
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.AreaSite.CompetitorSiteId">
+            <summary>
+            Gets or sets the CompetitorSiteId
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.AreaSite.PlanningSiteId">
+            <summary>
+            Gets or sets the PlanningSiteId
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.BusinessObjects.AssignUserToProfileRequest">
+            <summary>
+            Represents a request to assign a user to a profile.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.AssignUserToProfileRequest.UserID">
+            <summary>
+            Gets or sets the user identifier.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.AssignUserToProfileRequest.ProfileID">
+            <summary>
+            Gets or sets the profile identifier.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.BusinessObjects.DropDownObject">
+            <summary>
+            The drop down object
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.DropDownObject.Id">
+            <summary>
+            Gets or sets id
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.DropDownObject.Name">
+            <summary>
+            Gets or sets name
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.ISystemItemRepository.AddAccount(Tieptuyen.Components.Core.Api.BusinessObjects.Account,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Add new account
+            </summary>
+            <param name="account">Account to add</param>
+            <param name="unitOfWork">Unit of work</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.ISystemItemRepository.GetAllAccounts(Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Get all accounts
+            </summary>
+            <param name="unitOfWork">unit of work</param>
+            <returns></returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.ISystemItemService.AddAccount(Tieptuyen.Components.Core.Api.BusinessObjects.Account)">
+            <summary>
+            Add account
+            </summary>
+            <param name="account"></param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.ISystemItemService.GetAllAccounts">
+            <summary>
+            Get all account
+            </summary>
+            <returns>List of accounts</returns>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.BusinessObjects.MembersOfUserProfile">
+            <summary>
+            Represent the members of user profile
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.MembersOfUserProfile.UsersAssigned">
+            <summary>
+            Gets or sets users have been assigned.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.MembersOfUserProfile.UsersUnAssigned">
+            <summary>
+            Gets or sets users have been unassigned.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.BusinessObjects.MultiUsers">
+            <summary>
+            Represents a pRE user.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.MultiUsers.Ids">
+            <summary>
+            Gets or sets the list id of user
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.MultiUsers.Users">
+            <summary>
+            Gets or sets the list of users
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.MultiUsers.ProfileId">
+            <summary>
+            Gets or sets the profile ID.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.MultiUsers.PreferredLanguage">
+            <summary>
+            Gets or sets the preferred language.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.MultiUsers.Password">
+            <summary>
+            Gets or sets the password.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.MultiUsers.PasswordConfirmation">
+            <summary>
+            Gets or sets the password confirmation.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository">
+            <summary>
+            The repository for handling data-access operations relating to user access control.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.SelectUserSettings(System.String,System.String)">
+            <summary>
+            Selects the settings for a user from the database.
+            </summary>
+            <param name="userName">The username of the user.</param>
+            <param name="password">The username of the user.</param>
+            <returns>A <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.UserSettings"/> object representing the user's settings.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="userName"/> is <c>null</c> or empty.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.SelectUserSettings(System.String,System.String,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Selects the settings for a user from the database.
+            </summary>
+            <param name="userName">The username of the user.</param>
+            <param name="password">The username of the user.</param>
+            <param name="unitOfWork">The unit of work.</param>
+            <returns>A <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.UserSettings"/> object representing the user's settings.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="userName"/> is <c>null</c> or empty.</exception>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="unitOfWork"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.UpdateUserSettings(Tieptuyen.Components.Core.Api.BusinessObjects.UserSettings,Tieptuyen.Components.Core.Api.BusinessObjects.UserSettingsUpdateOptions)">
+            <summary>
+            Updates the user settings in the database.
+            </summary>
+            <param name="userSettings">The user settings.</param>
+            <param name="options">The options.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if either <paramref name="userSettings"/> or <paramref name="unitOfWork"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.UpdateUserSettings(Tieptuyen.Components.Core.Api.BusinessObjects.UserSettings,Tieptuyen.Components.Core.Api.BusinessObjects.UserSettingsUpdateOptions,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Updates the user settings in the database.
+            </summary>
+            <param name="userSettings">The user settings.</param>
+            <param name="options">The options.</param>
+            <param name="unitOfWork">The unit of work.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if either <paramref name="userSettings"/> or <paramref name="unitOfWork"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.Delete(System.Int32,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Delete the user search save in the database
+            </summary>
+            <param name="id">the user restriction filter id</param>
+            <param name="unitOfWork">the unit of work</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.SelectProfiles">
+            <summary>
+            Selects all the profiles from the database.
+            </summary>
+            <returns>A collection of <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.Profile"/> objects.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.SelectProfiles(Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Selects all the profiles from the database.
+            </summary>
+            <param name="unitOfWork">The unit of work.</param>
+            <returns>A collection of <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.Profile"/> objects.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="unitOfWork"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.Insert(Tieptuyen.Components.Core.Api.BusinessObjects.Profile)">
+            <summary>
+            Inserts the specified profile into database.
+            </summary>
+            <param name="profile">The profile.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="profile"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.Insert(Tieptuyen.Components.Core.Api.BusinessObjects.Profile,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Inserts the specified profile into database.
+            </summary>
+            <param name="profile">The profile.</param>
+            <param name="unitOfWork">The unit of work.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if either <paramref name="profile"/> or <paramref name="unitOfWork"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.Update(Tieptuyen.Components.Core.Api.BusinessObjects.Profile,Tieptuyen.Components.Core.Api.BusinessObjects.ProfileUpdateOptions)">
+            <summary>
+            Updates the specified profile in the database.
+            </summary>
+            <param name="profile">The profile.</param>
+            <param name="options">The options to use when updating the profile.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="profile"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.Update(Tieptuyen.Components.Core.Api.BusinessObjects.Profile,Tieptuyen.Components.Core.Api.BusinessObjects.ProfileUpdateOptions,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Updates the specified profile in the database.
+            </summary>
+            <param name="profile">The profile.</param>
+            <param name="options">The options to use when updating the profile.</param>
+            <param name="unitOfWork">The unit of work.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if either <paramref name="profile"/> or <paramref name="unitOfWork"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.MultipleUpdate(System.Int32[],Tieptuyen.Components.Core.Api.BusinessObjects.Profile,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Updates multiple profile in the database
+            </summary>
+            <param name="profileIds">list of profile id</param>
+            <param name="profile">The profile</param>
+            <param name="unitOfWork">The unit of work</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.Delete(Tieptuyen.Components.Core.Api.BusinessObjects.Profile)">
+            <summary>
+            Deletes the specified profile.
+            </summary>
+            <param name="profile">The profile.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="profile"/> is <c>null</c></exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.Delete(Tieptuyen.Components.Core.Api.BusinessObjects.Profile,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Deletes the specified profile.
+            </summary>
+            <param name="profile">The profile.</param>
+            <param name="unitOfWork">The unit of work.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if either <paramref name="profile"/> or <paramref name="unitOfWork"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.IsProfileEmpty(System.Int32)">
+            <summary>
+            Determines whether the specified profile is empty (i.e. currently has no users assigned to it).
+            </summary>
+            <param name="profileId">The profile ID.</param>
+            <returns><c>true</c> if the profile is empty, otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.IsProfileEmpty(System.Int32,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Determines whether the specified profile is empty (i.e. currently has no users assigned to it).
+            </summary>
+            <param name="profileId">The profile ID.</param>
+            <param name="unitOfWork">The unit of work.</param>
+            <returns><c>true</c> if the profile is empty, otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.SelectUsers">
+            <summary>
+            Selects all users.
+            </summary>
+            <returns>A collection of <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.User"/> objects.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.SelectUsers(Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Selects all users.
+            </summary>
+            <param name="unitOfWork">The unit of work.</param>
+            <returns>A collection of <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.User"/> objects.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="unitOfWork"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.SelectUser(System.Int32)">
+            <summary>
+            Selects a user.
+            </summary>
+            <param name="userId">The user ID.</param>
+            <returns>The matching <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.User"/> object, or <c>null</c> if no match is found.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.SelectUser(System.Int32,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Selects a user.
+            </summary>
+            <param name="userId">The user ID.</param>
+            <param name="unitOfWork">The unit of work.</param>
+            <returns>The matching <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.User"/> object, or <c>null</c> if no match is found.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="unitOfWork"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.SelectUser(System.String)">
+            <summary>
+            Selects a user.
+            </summary>
+            <param name="userName">The username of the user.</param>
+            <returns>The matching <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.User"/> object, or <c>null</c> if no match is found.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="userName"/> is either <c>null</c> or empty.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.SelectUser(System.String,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Selects a user.
+            </summary>
+            <param name="userName">The username of the user.</param>
+            <param name="unitOfWork">The unit of work.</param>
+            <returns>The matching <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.User"/> object, or <c>null</c> if no match is found.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="unitOfWork"/> is <c>null</c>.</exception>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="userName"/> is either <c>null</c> or empty.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.Insert(Tieptuyen.Components.Core.Api.BusinessObjects.User)">
+            <summary>
+            Inserts the specified user into the database.
+            </summary>
+            <param name="user">The user.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="user"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.Insert(Tieptuyen.Components.Core.Api.BusinessObjects.User,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Inserts the specified user into the database.
+            </summary>
+            <param name="user">The user.</param>
+            <param name="unitOfWork">The unit of work.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if either <paramref name="user"/> or <paramref name="unitOfWork"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.Update(Tieptuyen.Components.Core.Api.BusinessObjects.User)">
+            <summary>
+            Updates the specified user in the database.
+            </summary>
+            <param name="user">The user.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="user"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.Update(Tieptuyen.Components.Core.Api.BusinessObjects.User,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Updates the specified user in the database.
+            </summary>
+            <param name="user">The user.</param>
+            <param name="unitOfWork">The unit of work.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if either <paramref name="user"/> or <paramref name="unitOfWork"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.Delete(Tieptuyen.Components.Core.Api.BusinessObjects.User)">
+            <summary>
+            Deletes the specified user from the database.
+            </summary>
+            <param name="user">The user.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="user"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.Delete(Tieptuyen.Components.Core.Api.BusinessObjects.User,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Deletes the specified user from the database.
+            </summary>
+            <param name="user">The user.</param>
+            <param name="unitOfWork">The unit of work.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if either <paramref name="user"/> or <paramref name="unitOfWork"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.ResetPassword(Tieptuyen.Components.Core.Api.BusinessObjects.PasswordReset)">
+            <summary>
+            Resets a user's password.
+            </summary>
+            <param name="passwordReset">The password reset request.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="passwordReset"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.ResetPassword(Tieptuyen.Components.Core.Api.BusinessObjects.PasswordReset,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Resets a user's password.
+            </summary>
+            <param name="passwordReset">The password reset request.</param>
+            <param name="unitOfWork">The unit of work.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if either <paramref name="passwordReset"/> or <paramref name="unitOfWork"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.GetPassword(System.String)">
+            <summary>
+            Gets the password string for the user.  
+            </summary>
+            <param name="userName">The user name of the user to get the password for.</param>
+            <returns>The password string (may be encrypted). Unencrypted passwords are prefixed !ENC!</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.GetPreferredLanguage(System.String)">
+            <summary>
+            Get the preferred language stored for the user that has the given user name.
+            </summary>
+            <param name="userName">The user name</param>
+            <returns>The preferred language</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.GetAllRrimaryRoles(Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Gets all the sites for primary role.
+            </summary>
+            <param name="unitOfWork">The unit of work.</param>
+            <returns>A IEnumerable of <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.PrimaryRole"/> objects.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.GetPrimaryRoleWidgetMappings(System.Int32,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            The get primary role widget mapping.
+            </summary>
+            <param name="primaryRoleId">
+            The id.
+            </param>
+            <param name="unitOfWork">
+            The unit of work.
+            </param>
+            <returns>
+            The list primary role widget mapping.
+            </returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.UpdateUserMulti(Tieptuyen.Components.Core.Api.BusinessObjects.MultiUsers,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Updates the specified user in the database.
+            </summary>
+            <param name="multiUsers">The user.</param>
+            <param name="unitOfWork">The unit of work.</param> 
+            <returns>
+            number of uses affected
+            </returns>               
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.GetUserFilterValues(System.Int32,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Gets filter values of user
+            </summary>
+            <param name="filterTypeId">The filter type id</param>
+            <param name="unitOfWork">The unit of work</param>
+            <returns>a collection</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.GetMembersOfUserProfile(System.Int32,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Gets members of user profile
+            </summary>
+            <param name="profileId">The profile id</param>
+            <param name="unitOfWork">The unit of work</param>
+            <returns>The members of user profile</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.AssignUserToProfile(System.Int32,System.Int32,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Assign user to profile
+            </summary>
+            <param name="userId">The user id</param>
+            <param name="profileId">The profile id</param>
+            <param name="unitOfWork">The unit of work</param>
+            <returns>The integer value</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.GetWidgetPermissionByPrimaryRole(System.Int32,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Gets widget permissions primary role.
+            </summary>
+            <param name="primaryRoleId">The primary role id.</param>
+            <param name="unitOfWork">The unit of work.</param>
+            <returns>The collection.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlRepository.VerifyWindowsUser(System.String,Tieptuyen.Components.Core.Api.DataAccess.IUnitOfWork)">
+            <summary>
+            Verifies a windows user exists and creates a record in the User table if not.
+            </summary>
+            <param name="userName">The username.</param>
+            <param name="unitOfWork">The unit of work.</param>
+            <returns>The profile ID assigned to this user.</returns>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService">
+            <summary>
+            The service for handling operations relating to user access control.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.GetUserSettings(System.String,System.String)">
+            <summary>
+            Gets the user settings for the specified user.
+            </summary>
+            <param name="userName">The username of the user.</param>
+            <param name="password">The username of the user.</param>
+            <returns>A <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.UserSettings"/> object containing the user's settings.</returns>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="userName"/> is <c>null</c> or empty.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.UpdateUserSettings(Tieptuyen.Components.Core.Api.BusinessObjects.UserSettings,Tieptuyen.Components.Core.Api.BusinessObjects.UserSettingsUpdateOptions)">
+            <summary>
+            Updates the user settings.
+            </summary>
+            <param name="userSettings">The user settings.</param>
+            <param name="options">The options.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="userSettings"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.GetProfiles(System.String)">
+            <summary>
+            Gets all the user profiles.
+            </summary>
+            <param name="currentUser">The user currently logged into the API.</param>
+            <returns>A collection of <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.Profile"/> objects.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.Add(Tieptuyen.Components.Core.Api.BusinessObjects.Profile)">
+            <summary>
+            Adds a profile.
+            </summary>
+            <param name="profile">The profile.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="profile"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.Update(Tieptuyen.Components.Core.Api.BusinessObjects.Profile)">
+            <summary>
+            Updates the specified profile.
+            </summary>
+            <param name="profile">The profile.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="profile"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.Update(Tieptuyen.Components.Core.Api.BusinessObjects.Profile,Tieptuyen.Components.Core.Api.BusinessObjects.ProfileUpdateOptions)">
+            <summary>
+            Updates the specified profile.
+            </summary>
+            <param name="profile">The profile.</param>
+            <param name="options">The options.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="profile"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.MultipleUpdate(System.Int32[],Tieptuyen.Components.Core.Api.BusinessObjects.Profile)">
+            <summary>
+            Update multiple profile
+            </summary>
+            <param name="profileIds">The list of profile id</param>
+            <param name="profile">The profile</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.Delete(Tieptuyen.Components.Core.Api.BusinessObjects.Profile)">
+            <summary>
+            Deletes the specified profile.
+            </summary>
+            <param name="profile">The profile.</param>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="profile"/> is <c>null</c>.</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown if the specified profile is not empty (i.e. still has users assigned to it).</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.IsProfileEmpty(System.Int32)">
+            <summary>
+            Determines whether the specified profile is empty (i.e. currently has no users assigned to it).
+            </summary>
+            <param name="profileId">The profile ID.</param>
+            <returns><c>true</c> if the profile is empty, otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.GetUsers">
+            <summary>
+            Gets all the users.
+            </summary>
+            <returns>A collection of <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.User"/> objects.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.GetUser(System.Int32)">
+            <summary>
+            Gets a single user.
+            </summary>
+            <param name="userId">The user ID.</param>
+            <returns>The matching <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.User"/> object, or <c>null</c> if not match is found.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.GetUser(System.String)">
+            <summary>
+            Gets a single user.
+            </summary>
+            <param name="userName">The username of the user.</param>
+            <returns>The matching <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.User"/> object, or <c>null</c> if not match is found.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.Add(Tieptuyen.Components.Core.Api.BusinessObjects.User)">
+            <summary>
+            Adds the specified user.
+            </summary>
+            <param name="user">The user.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="user"/> is null.</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown if a user already exists with the same username </exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.Update(Tieptuyen.Components.Core.Api.BusinessObjects.User)">
+            <summary>
+            Updates the specified user.
+            </summary>
+            <param name="user">The user.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="user"/> is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.Delete(Tieptuyen.Components.Core.Api.BusinessObjects.User,System.String)">
+            <summary>
+            Deletes the specified user.
+            </summary>
+            <param name="user">The user.</param>
+            <param name="userName">The username of the user who is performing the deletion.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="user"/> is <c>null</c>.</exception>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="userName"/> is either <c>null</c> or empty.</exception>
+            <exception cref="T:System.InvalidOperationException">Thrown if the user tries to delete themselves (i.e. when the value of <paramref name="userName"/> matches the <c>UserName</c> property of <paramref name="user"/>).</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.IsUserNameInUse(System.String)">
+            <summary>
+            Determines whether the specified username is already in use.
+            </summary>
+            <param name="userName">The username.</param>
+            <returns><c>true</c> if the username is already in use, otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.ResetPassword(Tieptuyen.Components.Core.Api.BusinessObjects.PasswordReset,System.String,System.Boolean)">
+            <summary>
+            Resets a user's password.
+            </summary>
+            <param name="passwordReset">The password reset request.</param>
+            <param name="userName">The username of the user who is resetting the password.</param>
+            <param name="privileged">Whether reset is privileged - i.e. can be done for another user
+            and does not need existing password</param>
+            <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="passwordReset"/> is <c>null</c>.</exception>
+            <exception cref="T:System.ArgumentException">Thrown if <paramref name="userName"/> is either <c>null</c> or empty; or the passwords do not match.</exception>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.GetAllPrimaryRoles">
+            <summary>
+            Gets all the sites for primary role.
+            </summary>
+            <returns>A IEnumerable of <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.PrimaryRole"/> objects.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.GetPrimaryRoleWidgetMappings(System.Int32)">
+            <summary>
+            The get primary role widget mapping.
+            </summary>
+            <param name="primaryRoleId">
+            The id.
+            </param>
+            <returns>
+            The list primary role widget mapping.
+            </returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.UpdateUserMulti(Tieptuyen.Components.Core.Api.BusinessObjects.MultiUsers)">
+            <summary>
+            Updates the specified user in the database.
+            </summary>
+            <param name="multiUsers">The user.</param>
+            <returns>
+            number of uses affected
+            </returns>                        
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.Delete(System.Int32)">
+            <summary>
+            Save Filter Users
+            </summary>
+            <param name="id">request id</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.GetMembersOfUserProfile(System.Int32)">
+            <summary>
+            Gets members of user profile
+            </summary>
+            <param name="profileId">The profile id</param>
+            <returns>Members of user profile</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.AssignUserToProfile(System.Int32,System.Int32)">
+            <summary>
+            Assign user to profile
+            </summary>
+            <param name="userId">The user id</param>
+            <param name="profileid">The profile id</param>
+            <returns>The integer value</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.GetWidgetPermissionByPrimaryRole(System.Int32,System.String)">
+            <summary>
+            Gets widget permissions primary role.
+            </summary>
+            <param name="primaryRoleId">The primary role id.</param>
+            <param name="currentUser">The current user.</param>
+            <returns>The collection.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService.VerifyWindowsUser(System.String)">
+            <summary>
+            Verifies a windows user exists and creates a record in the User table if not.
+            </summary>
+            <param name="userName">The username.</param>
+            <returns>The profile ID assigned to this user.</returns>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.BusinessObjects.MultipleProfile">
+            <summary>
+            Represents a multiple user profile.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.MultipleProfile.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.MultipleProfile"/> class.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.MultipleProfile.Id">
+            <summary>
+            Gets or sets the unique identifier for this profile.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.MultipleProfile.PrimaryRoleID">
+            <summary>
+            Gets or sets Site for primary role.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.BusinessObjects.MultipleUpdateUserProfileRequest">
+            <summary>
+            Represents the multiple update user profile request
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.MultipleUpdateUserProfileRequest.ProfileIds">
+            <summary>
+            Gets or sets list of profile id
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.MultipleUpdateUserProfileRequest.Profile">
+            <summary>
+            Gets or sets profile
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.BusinessObjects.PasswordReset">
+            <summary>
+            Represents a request to reset a user's password.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.PasswordReset.UserName">
+            <summary>
+            Gets or sets the username.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.PasswordReset.ExistingPassword">
+            <summary>
+            Gets or sets the existing password.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.PasswordReset.Password">
+            <summary>
+            Gets or sets the password.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.PasswordReset.PasswordConfirmation">
+            <summary>
+            Gets or sets the password confirmation.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.PasswordReset.EncryptedPassword">
+            <summary>
+            Gets or sets the encrypted password.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.BusinessObjects.PermissionLevel">
+            <summary>
+            Represents a single permission on a widget.
+            </summary>
+        </member>
+        <member name="F:Tieptuyen.Components.Core.Api.BusinessObjects.PermissionLevel.None">
+            <summary>
+            Specifies that the user has no permissions on the widget.
+            </summary>
+        </member>
+        <member name="F:Tieptuyen.Components.Core.Api.BusinessObjects.PermissionLevel.Read">
+            <summary>
+            Specifies that the user has read permissions on the widget.
+            </summary>
+        </member>
+        <member name="F:Tieptuyen.Components.Core.Api.BusinessObjects.PermissionLevel.Write">
+            <summary>
+            Specifies that the user has write permissions on the widget.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.BusinessObjects.PrimaryRole">
+            <summary>
+            Represents a single site for primary role.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.PrimaryRole.Id">
+            <summary>
+            Gets or sets the unique identifier for this site for primary role.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.PrimaryRole.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.PrimaryRole.TranslationID">
+            <summary>
+            Gets or sets the translation id.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.BusinessObjects.PrimaryRoleWidgetMapping">
+            <summary>
+            The primary role widget mapping.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.PrimaryRoleWidgetMapping.PrimaryRoleWidgetMappingId">
+            <summary>
+            Gets or sets the primary role widget mapping id.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.PrimaryRoleWidgetMapping.PrimaryRoleId">
+            <summary>
+            Gets or sets the primary role id.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.PrimaryRoleWidgetMapping.WidgetId">
+            <summary>
+            Gets or sets the widget id.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.BusinessObjects.Profile">
+            <summary>
+            Represents a single user profile.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.Profile.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.Profile"/> class.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.Profile.Id">
+            <summary>
+            Gets or sets the unique identifier for this profile.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.Profile.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.Profile.Permissions">
+            <summary>
+            Gets or sets the permissions.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.Profile.PrimaryRoleID">
+            <summary>
+            Gets or sets Site for primary role.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.Profile.CanManageAccountLocks">
+            <summary>
+            Gets or sets a value indicating whether this user can manage account locks.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.Profile.MembersOfUserProfiles">
+            <summary>
+            Gets or sets a value indicating whether this user can manage account locks.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.BusinessObjects.ProfileUpdateOptions">
+            <summary>
+            Represents the options to use when updating profiles in the database.
+            </summary>
+        </member>
+        <member name="F:Tieptuyen.Components.Core.Api.BusinessObjects.ProfileUpdateOptions.None">
+            <summary>
+            Specifies no options
+            </summary>
+        </member>
+        <member name="F:Tieptuyen.Components.Core.Api.BusinessObjects.ProfileUpdateOptions.UpdatePermissions">
+            <summary>
+            Updates the permissions assigned to the profile
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.BusinessObjects.User">
+            <summary>
+            Represents a pRE user.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.User.Id">
+            <summary>
+            Gets or sets the unique identifier for the user.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.User.FullName">
+            <summary>
+            Gets or sets the full name of the user.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.User.UserName">
+            <summary>
+            Gets or sets the username of the user.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.User.ProfileId">
+            <summary>
+            Gets or sets the profile ID.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.User.ProfileName">
+            <summary>
+            Gets or sets the profile name.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.User.PrimaryRoleId">
+            <summary>
+            Gets or sets the primary role id.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.User.Password">
+            <summary>
+            Gets or sets the password.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.User.PasswordConfirmation">
+            <summary>
+            Gets or sets the password confirmation.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.User.EncryptedPassword">
+            <summary>
+            Gets or sets the encrypted password.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.User.PreferredLanguage">
+            <summary>
+            Gets or sets the preferred language.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.User.Created">
+            <summary>
+            Gets or sets when the user was created.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.User.LastUpdated">
+            <summary>
+            Gets or sets when the user was last updated.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.User.IsSelected">
+            <summary>
+            Gets or sets a value indicating whether user selected.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.User.Locked">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.User"/> is locked.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.User.PasswordAttemptCount">
+            <summary>
+            Gets or sets a value indicating how many times you enter wrong password
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.BusinessObjects.UserSettings">
+            <summary>
+            Represents the pRE-specific settings applied to a user.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.UserSettings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.UserSettings"/> class.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.UserSettings.CanManageAccountLocks">
+            <summary>
+            Gets or sets a value indicating whether this user can manage account locks.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.UserSettings.Widgets">
+            <summary>
+            Gets or sets the widgets the user is allowed to access.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.BusinessObjects.UserSettingsUpdateOptions">
+            <summary>
+            Specifies the options for updating user settings.
+            </summary>
+        </member>
+        <member name="F:Tieptuyen.Components.Core.Api.BusinessObjects.UserSettingsUpdateOptions.Basic">
+            <summary>
+            Update basic settings.
+            </summary>
+        </member>
+        <member name="F:Tieptuyen.Components.Core.Api.BusinessObjects.UserSettingsUpdateOptions.SiteMetricsItems">
+            <summary>
+            Update the site metrics items.
+            </summary>
+        </member>
+        <member name="F:Tieptuyen.Components.Core.Api.BusinessObjects.UserSettingsUpdateOptions.MixingDeskItems">
+            <summary>
+            Update the mixing desk items.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.BusinessObjects.Widget">
+            <summary>
+            Represents a widget.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.Widget.WidgetId">
+            <summary>
+            Gets or sets the widget ID.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.Widget.Type">
+            <summary>
+            Gets or sets the type of widget.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.Widget.TitleTxId">
+            <summary>
+            Gets or sets the title translation id.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.Widget.TitleDefaultText">
+            <summary>
+            Gets or sets the title default text.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.Widget.DescriptionTranslationId">
+            <summary>
+            Gets or sets the description.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.Widget.Obj">
+            <summary>
+            Gets or sets the object type.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.Widget.Order">
+            <summary>
+            Gets or sets the order.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.Widget.Created">
+            <summary>
+            Gets or sets when the widget was created.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.Widget.LastUpdated">
+            <summary>
+            Gets or sets when the widget was last updated.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.Widget.PermissionLevel">
+            <summary>
+            Gets or sets the permission level.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.Widget.CanRead">
+            <summary>
+            Gets a value indicating whether the user has read-permissions on this widget.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.Widget.CanWrite">
+            <summary>
+            Gets a value indicating whether the user has write-permissions on this widget.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.BusinessObjects.WidgetId">
+            <summary>
+            The widget id.
+            </summary>
+        </member>
+        <member name="F:Tieptuyen.Components.Core.Api.BusinessObjects.WidgetId.NotesWidgetId">
+            <summary>
+            The notes widget id.
+            </summary>
+        </member>
+        <member name="T:Tieptuyen.Components.Core.Api.BusinessObjects.WidgetPermission">
+            <summary>
+            Represents the permission level on a widget.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.BusinessObjects.WidgetPermission.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.WidgetPermission"/> class.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.WidgetPermission.ProfileId">
+            <summary>
+            Gets or sets the profile ID.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.WidgetPermission.WidgetId">
+            <summary>
+            Gets or sets the widget ID.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.WidgetPermission.TitleDefaultText">
+            <summary>
+            Gets or sets the title default text.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.WidgetPermission.TitleTxID">
+            <summary>
+            Gets or sets the translation code for the widget.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.WidgetPermission.Obj">
+            <summary>
+            Gets or sets the object.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.WidgetPermission.PermissionLevel">
+            <summary>
+            Gets or sets the permission level.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.WidgetPermission.Enable">
+            <summary>
+            Gets or sets a value indicating whether or not to enable this permission.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.WidgetPermission.IsChecked">
+            <summary>
+            Gets or sets IsChecked
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.WidgetPermission.WidgetViewRestriction">
+            <summary>
+            Gets or sets the widget view restriction.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.WidgetPermission.CanRead">
+            <summary>
+            Gets or sets a value indicating whether the profile has read permissions on the widget.
+            </summary>
+        </member>
+        <member name="P:Tieptuyen.Components.Core.Api.BusinessObjects.WidgetPermission.CanWrite">
+            <summary>
+            Gets or sets a value indicating whether the profile has write permissions on the widget.
+            </summary>
+        </member>
+    </members>
+</doc>

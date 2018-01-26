@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tieptuyen.Components.Core.Api.Controllers</name>
+    </assembly>
+    <members>
+        <member name="T:Tieptuyen.Components.Core.Api.Controllers.AccessControlController">
+            <summary>
+            The web API controller for access control functionality.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.#ctor(Tieptuyen.Components.Core.Api.BusinessObjects.IAccessControlService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tieptuyen.Components.Core.Api.Controllers.AccessControlController"/> class.
+            </summary>
+            <param name="accessControlService">The access control service.</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.GetUserSettings(System.String,System.String)">
+            <summary>
+            Gets the user settings.
+            </summary>
+            <param name="userName">The username of the user.</param>
+            <param name="password">The username of the user.</param>
+            <returns>A <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.UserSettings"/> object.</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.SaveUserSettings(Tieptuyen.Components.Core.Api.BusinessObjects.UserSettings)" -->
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.SaveSiteMetricsItems(Tieptuyen.Components.Core.Api.BusinessObjects.UserSettings)">
+            <summary>
+            Saves the site metrics items.
+            </summary>
+            <param name="userSettings">The user settings.</param>
+            <returns>The value of <paramref name="userSettings"/>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.SaveMixingDeskItems(Tieptuyen.Components.Core.Api.BusinessObjects.UserSettings)">
+            <summary>
+            Saves the mixing desk items.
+            </summary>
+            <param name="userSettings">The user settings.</param>
+            <returns>The value of <paramref name="userSettings"/>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.GetAllProfiles">
+            <summary>
+            Gets all profiles.
+            </summary>
+            <returns>A collection of <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.Profile"/> objects.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.AddProfile(Tieptuyen.Components.Core.Api.BusinessObjects.Profile)">
+            <summary>
+            Adds a new profile.
+            </summary>
+            <param name="profile">The profile.</param>
+            <returns>The <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.Profile"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.UpdateProfile(Tieptuyen.Components.Core.Api.BusinessObjects.Profile)">
+            <summary>
+            Updates the specified profile.
+            </summary>
+            <param name="profile">The profile.</param>
+            <returns>The <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.Profile"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.UpdateMultipleProfile(Tieptuyen.Components.Core.Api.BusinessObjects.MultipleUpdateUserProfileRequest)">
+            <summary>
+            Updates multiple profile
+            </summary>
+            <param name="request">Update request</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.DeleteProfile(Tieptuyen.Components.Core.Api.BusinessObjects.Profile)">
+            <summary>
+            Deletes the specified profile.
+            </summary>
+            <param name="profile">The profile.</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.IsProfileEmpty(System.Int32)">
+            <summary>
+            Determines whether the specified profile is empty (i.e. currently has no users assigned to it).
+            </summary>
+            <param name="profileId">The profile ID.</param>
+            <returns><c>true</c> if the profile is empty, otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.GetAllUsers">
+            <summary>
+            Gets all users.
+            </summary>
+            <returns>A collection of <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.User"/> objects.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.GetUser(System.Int32)">
+            <summary>
+            Gets a single user.
+            </summary>
+            <param name="userId">The user ID.</param>
+            <returns>The matching <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.User"/> object or <c>null</c> when no match found.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.GetUser(System.String)">
+            <summary>
+            Gets a single user.
+            </summary>
+            <param name="userName">The username of the user.</param>
+            <returns>The matching <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.User"/> object or <c>null</c> when no match found.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.AddUser(Tieptuyen.Components.Core.Api.BusinessObjects.User)">
+            <summary>
+            Adds a user.
+            </summary>
+            <param name="user">The user.</param>
+            <returns>The <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.User"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.UpdateUser(Tieptuyen.Components.Core.Api.BusinessObjects.User)">
+            <summary>
+            Updates a user.
+            </summary>
+            <param name="user">The user.</param>
+            <returns>The <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.User"/> object.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.DeleteUser(Tieptuyen.Components.Core.Api.BusinessObjects.User)">
+            <summary>
+            Deletes a user.
+            </summary>
+            <param name="user">The user.</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.IsUserNameInUse(System.String)">
+            <summary>
+            Determines whether the specified username is already in use.
+            </summary>
+            <param name="userName">The username.</param>
+            <returns><c>true</c> if the username is already in use, otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.UserResetPassword(Tieptuyen.Components.Core.Api.BusinessObjects.PasswordReset)">
+            <summary>
+            Resets a user's password.
+            </summary>
+            <param name="passwordReset">The password reset.</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.PrivilegedResetPassword(Tieptuyen.Components.Core.Api.BusinessObjects.PasswordReset)">
+            <summary>
+            Resets a user's password.
+            </summary>
+            <param name="passwordReset">The password reset.</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.GetAllPrimaryRoles">
+            <summary>
+            Gets all primary roles.
+            </summary>
+            <returns>A collection of <see cref="T:Tieptuyen.Components.Core.Api.BusinessObjects.PrimaryRole"/> objects.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.GetPrimaryRoleWidgetMappings(System.Int32)">
+            <summary>
+            The get primary role widget mapping.
+            </summary>
+            <param name="primaryRoleId">
+            The primary role id.
+            </param>
+            <returns>
+            The list primary role widget mapping.
+            </returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.GetEmptyMultiUser">
+            <summary>
+            Gets a empty multi user.
+            </summary>        
+            <returns> Empty multi user</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.UpdateUserMulti(Tieptuyen.Components.Core.Api.BusinessObjects.MultiUsers)">
+            <summary>
+            Updates a user.
+            </summary>
+            <param name="users">The user.</param>        
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.ResetPasswordUsersMulti(Tieptuyen.Components.Core.Api.BusinessObjects.MultiUsers)">
+            <summary>
+            Resets a user's password.
+            </summary>
+            <param name="multiUser">User info</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.DeleteUserMulti(Tieptuyen.Components.Core.Api.BusinessObjects.MultiUsers)">
+            <summary>
+            Deletes a user.
+            </summary>
+            <param name="multiUser">The user.</param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.GetUserFilterTypes">
+            <summary>
+            Gets filter types
+            </summary>
+            <returns>a collection</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.GetMembersOfUserProfile(System.Int32)">
+            <summary>
+            Gets members of user profile
+            </summary>
+            <param name="profileId">Profile id</param>
+            <returns>Members of user profile</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.AssignUserToProfile(Tieptuyen.Components.Core.Api.BusinessObjects.AssignUserToProfileRequest)">
+            <summary>
+            Assign user to profile
+            </summary>
+            <param name="request">The request.</param>
+            <returns>The integer value</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.Delete(System.Int32)">
+            <summary>
+            The update.
+            </summary>
+            <param name="id">
+            The cost type.
+            </param>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.GetWidgetPermissionByPrimaryRole(System.Int32)">
+            <summary>
+            Gets widget permissions by primary role id.
+            </summary>
+            <param name="primaryRoleId">The primary role id.</param>
+            <returns>The collection of widget permission.</returns>
+        </member>
+        <member name="M:Tieptuyen.Components.Core.Api.Controllers.AccessControlController.VerifyWindowsUser">
+            <summary>
+            Gets the name of the windows user making the request
+            </summary>
+            <returns>The windows user details</returns>
+        </member>
+    </members>
+</doc>

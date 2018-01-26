@@ -1,0 +1,15 @@
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess.SqlServer\bin\Debug\Tieptuyen.Components.Core.Api.DataAccess.SqlServer.XML
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess.SqlServer\bin\Debug\Tieptuyen.Components.Core.Api.DataAccess.SqlServer.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess.SqlServer\bin\Debug\Tieptuyen.Components.Core.Api.DataAccess.SqlServer.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess.SqlServer\bin\Debug\Dapper.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess.SqlServer\bin\Debug\Tieptuyen.Components.Core.Api.DataAccess.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess.SqlServer\bin\Debug\Tieptuyen.Components.Core.Api.Util.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess.SqlServer\bin\Debug\Tieptuyen.Components.Core.Api.Util.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess.SqlServer\bin\Debug\Tieptuyen.Components.Core.Api.Util.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess.SqlServer\bin\Debug\Tieptuyen.Components.Core.Api.DataAccess.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess.SqlServer\bin\Debug\Tieptuyen.Components.Core.Api.DataAccess.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess.SqlServer\bin\Debug\Dapper.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess.SqlServer\bin\Debug\Dapper.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess.SqlServer\obj\Debug\Tieptuyen.Components.Core.Api.DataAccess.SqlServer.csprojResolveAssemblyReference.cache
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess.SqlServer\obj\Debug\Tieptuyen.Components.Core.Api.DataAccess.SqlServer.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\DataAccess\Tieptuyen.Components.Core.Api.DataAccess.SqlServer\obj\Debug\Tieptuyen.Components.Core.Api.DataAccess.SqlServer.pdb

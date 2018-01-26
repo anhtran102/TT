@@ -1,0 +1,15 @@
+F:\WORK\TIEPTUYEN\Tieptuyen\BusinessObjects\Tieptuyen.Components.Core.Api.BusinessObjects\bin\Release\Tieptuyen.Components.Core.Api.BusinessObjects.XML
+F:\WORK\TIEPTUYEN\Tieptuyen\BusinessObjects\Tieptuyen.Components.Core.Api.BusinessObjects\bin\Release\Tieptuyen.Components.Core.Api.BusinessObjects.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\BusinessObjects\Tieptuyen.Components.Core.Api.BusinessObjects\bin\Release\Tieptuyen.Components.Core.Api.BusinessObjects.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\BusinessObjects\Tieptuyen.Components.Core.Api.BusinessObjects\bin\Release\Tieptuyen.Components.Core.Api.DataAccess.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\BusinessObjects\Tieptuyen.Components.Core.Api.BusinessObjects\bin\Release\Tieptuyen.Components.Core.Api.ObjectModel.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\BusinessObjects\Tieptuyen.Components.Core.Api.BusinessObjects\bin\Release\Dapper.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\BusinessObjects\Tieptuyen.Components.Core.Api.BusinessObjects\bin\Release\Tieptuyen.Components.Core.Api.DataAccess.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\BusinessObjects\Tieptuyen.Components.Core.Api.BusinessObjects\bin\Release\Tieptuyen.Components.Core.Api.DataAccess.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\BusinessObjects\Tieptuyen.Components.Core.Api.BusinessObjects\bin\Release\Tieptuyen.Components.Core.Api.ObjectModel.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\BusinessObjects\Tieptuyen.Components.Core.Api.BusinessObjects\bin\Release\Tieptuyen.Components.Core.Api.ObjectModel.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\BusinessObjects\Tieptuyen.Components.Core.Api.BusinessObjects\bin\Release\Dapper.pdb
+F:\WORK\TIEPTUYEN\Tieptuyen\BusinessObjects\Tieptuyen.Components.Core.Api.BusinessObjects\bin\Release\Dapper.xml
+F:\WORK\TIEPTUYEN\Tieptuyen\BusinessObjects\Tieptuyen.Components.Core.Api.BusinessObjects\obj\Release\Tieptuyen.Components.Core.Api.BusinessObjects.csprojResolveAssemblyReference.cache
+F:\WORK\TIEPTUYEN\Tieptuyen\BusinessObjects\Tieptuyen.Components.Core.Api.BusinessObjects\obj\Release\Tieptuyen.Components.Core.Api.BusinessObjects.dll
+F:\WORK\TIEPTUYEN\Tieptuyen\BusinessObjects\Tieptuyen.Components.Core.Api.BusinessObjects\obj\Release\Tieptuyen.Components.Core.Api.BusinessObjects.pdb

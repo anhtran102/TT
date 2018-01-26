@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tieptuyen.Api.Security.Crypto</name>
+    </assembly>
+    <members>
+        <member name="T:Tieptuyen.Api.Security.Crypto.CryptoLibrary">
+            <summary>
+            Provides cryptographic functionality.
+            </summary>
+        </member>
+        <member name="M:Tieptuyen.Api.Security.Crypto.CryptoLibrary.Encrypt(System.String)">
+            <summary>
+            Encrypts specified plaintext using Rijndael symmetric key algorithm
+            and returns a base64-encoded result.
+            </summary>
+            <param name="plainText">Plaintext value to be encrypted.</param>
+            <returns>Encrypted value formatted as a base64-encoded string.</returns>
+        </member>
+        <member name="M:Tieptuyen.Api.Security.Crypto.CryptoLibrary.Encrypt(System.String,System.String)">
+            <summary>
+            Encrypts specified plaintext using Rijndael symmetric key algorithm
+            and returns a base64-encoded result.
+            </summary>
+            <param name="plainText">Plaintext value to be encrypted.</param>
+            <param name="saltValue">SaltValue value used in the encryption.</param>
+            <returns>
+            Encrypted value formatted as a base64-encoded string.
+            </returns>
+        </member>
+        <member name="M:Tieptuyen.Api.Security.Crypto.CryptoLibrary.Decrypt(System.String)">
+            <summary>
+            Decrypts specified cipher text using Rijndael symmetric key algorithm.
+            </summary>
+            <param name="cipherText">Base64-formatted cipher text value.</param>
+            <returns>Decrypted string value.</returns>
+        </member>
+        <member name="M:Tieptuyen.Api.Security.Crypto.CryptoLibrary.Decrypt(System.String,System.String)">
+            <summary>
+            Decrypts specified cipher text using Rijndael symmetric key algorithm.
+            </summary>
+            <param name="cipherText">Base64-formatted cipher text value.</param>
+            <param name="saltValue">SaltValue value used in the encryption.</param>
+            <returns>Decrypted string value.</returns>
+        </member>
+        <member name="M:Tieptuyen.Api.Security.Crypto.CryptoLibrary.TryDecrypt(System.String,System.String@)">
+            <summary>
+            Tries to decrypt a cipher.
+            </summary>
+            <param name="cipherText">The cipher text.</param>
+            <param name="decryptText">The decrypt text.</param>
+            <returns><c>true</c> on success; otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Api.Security.Crypto.CryptoLibrary.TryDecrypt(System.String,System.String,System.String@)">
+            <summary>
+            Tries to decrypt a cipher.
+            </summary>
+            <param name="cipherText">The cipher text.</param>
+            <param name="saltValue">The salt value.</param>
+            <param name="decryptText">The decrypt text.</param>
+            <returns><c>true</c> on success; otherwise <c>false</c>.</returns>
+        </member>
+        <member name="M:Tieptuyen.Api.Security.Crypto.CryptoLibrary.GenerateSaltValue(System.Int32)">
+            <summary>
+            Generates a random salt value.
+            </summary>
+            <param name="length">The length of the salt value.</param>
+            <returns>Random generated salt value.</returns>
+        </member>
+    </members>
+</doc>
